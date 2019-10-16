@@ -33,15 +33,16 @@ def main():
 
     STAT_DIR = './public'  # static content
     KEY_DIR = './keys/'  # location of ssl keys, if used
-    LOG_DIR = './logs/'  # log files
+    LOG_DIR = './logs/'  # location log files, if used
     print(os.path.abspath(os.getcwd()))
     CONF = {'/': {'tools.sessions.on': True, 'tools.staticdir.root': const.APP_DIR},
             '/static': {'tools.staticdir.on': True, 'tools.staticdir.dir': STAT_DIR}
             }
 
     # cherrypy.config.update({'error_page.404': error_page_404})
-    cherrypy.log.access_file = LOG_DIR + 'accesstest.txt'
-    cherrypy.log.error_file = LOG_DIR + 'errortest.txt'
+    # remove # to activate logs
+    # cherrypy.log.access_file = LOG_DIR + 'accesstest.txt'
+    # cherrypy.log.error_file = LOG_DIR + 'errortest.txt'
 
     if const.HTTPS_PORT == 0:  # no https support
 
