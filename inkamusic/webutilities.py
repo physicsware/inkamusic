@@ -13,14 +13,14 @@ import datetime
 import string
 import random
 import cherrypy
-import html_data
-import const
-import utilities
-import create_composition
-import settings
-import general_midi_instruments
-import menu_entries as me
-import music_parameter as mp
+import inkamusic.html_data
+import inkamusic.const
+import inkamusic.utilities
+import inkamusic.create_composition
+import inkamusic.settings
+import inkamusic.general_midi_instruments
+import inkamusic.menu_entries as me
+import inkamusic.music_parameter as mp
 
 
 def check_instrumentation_ids(instrumentation):

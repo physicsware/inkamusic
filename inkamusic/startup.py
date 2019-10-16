@@ -12,8 +12,8 @@ import os
 import random
 import cherrypy
 
-import const
-import webutilities
+import inkamusic.const
+import inkamusic.webutilities
 
 def error_page_404(status, message, traceback, version):
     """error page for http error 404"""
@@ -24,7 +24,7 @@ def error_page_404(status, message, traceback, version):
 
 
 #if __name__ == '__main__':
-def main():
+def start():
 
     # initialize random numbers
     random.seed()
@@ -66,4 +66,3 @@ def main():
     cherrypy.quickstart(webutilities.InkaAlgorithmicMusicWebInterface(), '/', CONF)
 
 
-main()
