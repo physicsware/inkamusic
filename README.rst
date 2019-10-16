@@ -1,7 +1,7 @@
 ======================
-Inka Algorithmic Music
+inkamusic
 ======================
-
+Please note: inkamusic is currently being converted to open-source. A first usable version is expected to be available soon.
 
 .. image:: https://img.shields.io/pypi/v/inka_algorithmic_music.svg
         :target: https://pypi.python.org/pypi/inka_algorithmic_music
@@ -20,7 +20,7 @@ Inka Algorithmic Music
 
 
 
-Inka Algorithmic Music creates rule based fully arranged instrumental music.
+inkamusic creates rule based fully arranged instrumental music.
 
 
 * Free software: GNU General Public License v3
