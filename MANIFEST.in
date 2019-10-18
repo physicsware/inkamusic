@@ -8,4 +8,6 @@ recursive-include tests *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 
-recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif 
+recursive-include src/inkamusic/public *.png *.css *.gif *.ico
+recursive-include src/inkamusic/public/midi *.mid
