@@ -8,11 +8,11 @@ Copyright (C) 2018  Udo Wollschläger
 This file contains trackinfo utility functions
 
 """
-import const
-from const import TRACK_INFO_MELO_OR_PERC_INDX, TRACK_INFO_INSTRU_DEF_INDX
-from const import TRACK_INFO_RHYTHM_INDX, TRACK_INFO_CONNECT_INDX, TRACK_INFO_INSTRU_PAUSE_INDX
-import settings
-import music_parameter as mp
+import inkamusic.const as const
+from inkamusic.const import TRACK_INFO_MELO_OR_PERC_INDX, TRACK_INFO_INSTRU_DEF_INDX
+from inkamusic.const import TRACK_INFO_RHYTHM_INDX, TRACK_INFO_CONNECT_INDX, TRACK_INFO_INSTRU_PAUSE_INDX
+import inkamusic.settings as settings
+import inkamusic.music_parameter as mp
 
 
 def show_track_info(track_info):

@@ -8,8 +8,8 @@ Copyright (C) 2018  Udo Wollschläger
 This file contains all music generation parameter
 
 """
-from const import RM_TRACK_RHYTHM, RM_VARI_TRACK_RHYTHM
-from const import CR, CR2, CR_INTRO, CR_ENDING, CRB
+from inkamusic.const import RM_TRACK_RHYTHM, RM_VARI_TRACK_RHYTHM
+from inkamusic.const import CR, CR2, CR_INTRO, CR_ENDING, CRB
 
 # initial menu settings in web interface
 # index starts with 0 for first menu item, separator lines are counted

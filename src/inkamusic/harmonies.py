@@ -9,9 +9,9 @@ This file contains all harmony related functions and definitions
 
 """
 
-import const
-from const import SCALE_HARMONY_TYPES_INDX, SCALE_LEN_INDX, SCALE_COUNT_INDX, SCALE_NOTE_INDX
-from const import SCALE_START_INDX
+import inkamusic.const as const
+from inkamusic.const import SCALE_HARMONY_TYPES_INDX, SCALE_LEN_INDX, SCALE_COUNT_INDX, SCALE_NOTE_INDX
+from inkamusic.const import SCALE_START_INDX
 
 
 def check_harmony(tone, harmony_steps, basic_scale):

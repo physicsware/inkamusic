@@ -12,9 +12,9 @@ This file contains all global constants
 import os
 
 # directories
-APP_DIR = os.path.abspath(os.getcwd())+'/'  # root dir of application
-PUBLIC_DIR = APP_DIR+'public/'  # public = static dir of cherrypy web server
-MID_DIR = PUBLIC_DIR+'midi/'  # midi file sub directory
+
+STAT_DIR = 'public'  # public = static dir of cherrypy web server
+MID_DIR = STAT_DIR+'/midi/'  # midi file sub directory
 
 HTTP_PORT = 8080
 HTTPS_PORT = 0  # 8443, 0 disables https support

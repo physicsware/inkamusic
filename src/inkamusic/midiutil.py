@@ -11,7 +11,7 @@ This file contains MIDI file functions
 
 import math
 from struct import pack
-import const
+import inkamusic.const as const
 
 STATUSMSG_INDX = 0
 LEN_INDX = 1

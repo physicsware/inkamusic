@@ -8,12 +8,12 @@ Copyright (C) 2018  Udo Wollschläger
 This file contains all menu entries
 """
 
-from const import TICKSRES
-from const import NOTE_C, NOTE_CIS, NOTE_D, NOTE_DIS, NOTE_E, NOTE_F  # pylint: disable=unused-import
-from const import NOTE_FIS, NOTE_G, NOTE_GIS, NOTE_A, NOTE_BFLAT, NOTE_B  # pylint: disable=unused-import
-from const import HARMONY_PREFER_MAJOR_VAR, HARMONY_PREFER_MINOR_VAR, HARMONY_ANY, HARMONY_AVOID_MAJMIN
-from const import HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR
-from const import T_SOLO, T_CHOR, T_HMNY, T_BASS, R_HIGH, R_MEDI, R_LOW, R_BASS, R_FULL  # pylint: disable=unused-import
+from inkamusic.const import TICKSRES
+from inkamusic.const import NOTE_C, NOTE_CIS, NOTE_D, NOTE_DIS, NOTE_E, NOTE_F  # pylint: disable=unused-import
+from inkamusic.const import NOTE_FIS, NOTE_G, NOTE_GIS, NOTE_A, NOTE_BFLAT, NOTE_B  # pylint: disable=unused-import
+from inkamusic.const import HARMONY_PREFER_MAJOR_VAR, HARMONY_PREFER_MINOR_VAR, HARMONY_ANY, HARMONY_AVOID_MAJMIN
+from inkamusic.const import HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR
+from inkamusic.const import T_SOLO, T_CHOR, T_HMNY, T_BASS, R_HIGH, R_MEDI, R_LOW, R_BASS, R_FULL  # pylint: disable=unused-import
 
 
 INSTRUMENTATION_LIST = [

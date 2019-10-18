@@ -9,9 +9,9 @@ This file contains all pre_rhythm related functions and definitions
 
 """
 
-from const import TICKSRES
+from inkamusic.const import TICKSRES
 
-from const import P_STICK, P_BASS, P_HIGH, P_LOW, P_RIDE, P_SNARE
+from inkamusic.const import P_STICK, P_BASS, P_HIGH, P_LOW, P_RIDE, P_SNARE
 
 
 # Position constants

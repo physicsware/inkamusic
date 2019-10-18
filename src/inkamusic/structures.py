@@ -10,13 +10,13 @@ This file defines all composition structures
 """
 
 import copy
-import const
-from const import SUB_INDX, PROP_INDX, LEN_INDX, PROP_USEPART, PROP_INTRO_BRIDGE_END, NO_REPEAT
-from const import PROP_FROM_BAR, PROP_TO_BAR, PROP_ACTUAL_BAR, PROP_START, PROP_END
-from const import CR, CR2, CR_INTRO, CR_ENDING, CRB
-from const import BAR_GROUP, BAR_INFO, BAR_REPEATED, BAR_NOT_REPEATED
-import utilities
-import music_parameter as mp
+import inkamusic.const as const
+from inkamusic.const import SUB_INDX, PROP_INDX, LEN_INDX, PROP_USEPART, PROP_INTRO_BRIDGE_END, NO_REPEAT
+from inkamusic.const import PROP_FROM_BAR, PROP_TO_BAR, PROP_ACTUAL_BAR, PROP_START, PROP_END
+from inkamusic.const import CR, CR2, CR_INTRO, CR_ENDING, CRB
+from inkamusic.const import BAR_GROUP, BAR_INFO, BAR_REPEATED, BAR_NOT_REPEATED
+import inkamusic.utilities as utilities
+import inkamusic.music_parameter as mp
 
 
 def get_minimum_length(strc, min_len, melody_length):

@@ -7,10 +7,10 @@ Copyright (C) 2018  Udo Wollschläger
 This file defines all general midi instruments
 """
 
-from const import T_BASS, T_CHOR, T_SOLO, T_HMNY, T_PERC
-from const import R_BASS, R_LOW, R_MEDI, R_HIGH, R_FULL
-from const import P_STICK, P_ACCENT, P_BASS, P_HIGH, P_LOW, P_RIDE, P_SNARE
-import music_parameter as mp
+from inkamusic.const import T_BASS, T_CHOR, T_SOLO, T_HMNY, T_PERC
+from inkamusic.const import R_BASS, R_LOW, R_MEDI, R_HIGH, R_FULL
+from inkamusic.const import P_STICK, P_ACCENT, P_BASS, P_HIGH, P_LOW, P_RIDE, P_SNARE
+import inkamusic.music_parameter as mp
 
 # speed constants
 # max number of tones per second

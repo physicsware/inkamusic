@@ -9,13 +9,13 @@ This file creates the bar distribution
 
 """
 import random
-import const
+import inkamusic.const as const
 
-from const import BAR_GROUP
-from const import USED_HOW_OFTEN, CREATE_TYPE_IDENTIFIER, GROUP_IDENTIFIER, PLAYED_IN_TRACK
-import music_parameter as mp
-import trackinfo_util as tu
-import settings
+from inkamusic.const import BAR_GROUP
+from inkamusic.const import USED_HOW_OFTEN, CREATE_TYPE_IDENTIFIER, GROUP_IDENTIFIER, PLAYED_IN_TRACK
+import inkamusic.music_parameter as mp
+import inkamusic.trackinfo_util as tu
+import inkamusic.settings as settings
 
 
 class BarDistribution():

@@ -10,19 +10,19 @@ This file contains the rhythm algorithmic functions
 """
 import math
 import copy
-import const
-from const import PROP_INDX, PROP_USEPART, PROP_INTRO_BRIDGE_END, NO_REPEAT
-from const import PROP_FROM_BAR, CRB
-from const import RHYTHM_BEAT_INDX, RHYTHM_PAT_INDX
-from const import ACC_UNDEFINED, RY_POS, RY_ACC, RY_LEV, RY_LEN
-from const import RM_REPEAT, RM_HARMONY_TRACK, RM_SOLO_PATTERN
-from const import RM_TRACK_RHYTHM, RM_VARI_TRACK_RHYTHM
-from const import FIRST_BAR_OF_PART, BEAT_RHYTHM
+import inkamusic.const as const
+from inkamusic.const import PROP_INDX, PROP_USEPART, PROP_INTRO_BRIDGE_END, NO_REPEAT
+from inkamusic.const import PROP_FROM_BAR, CRB
+from inkamusic.const import RHYTHM_BEAT_INDX, RHYTHM_PAT_INDX
+from inkamusic.const import ACC_UNDEFINED, RY_POS, RY_ACC, RY_LEV, RY_LEN
+from inkamusic.const import RM_REPEAT, RM_HARMONY_TRACK, RM_SOLO_PATTERN
+from inkamusic.const import RM_TRACK_RHYTHM, RM_VARI_TRACK_RHYTHM
+from inkamusic.const import FIRST_BAR_OF_PART, BEAT_RHYTHM
 
-import trackinfo_util as tu
-from basic_rhythms import RHY_PATTERN_INDX, BLOCK_ACC
+import inkamusic.trackinfo_util as tu
+from inkamusic.basic_rhythms import RHY_PATTERN_INDX, BLOCK_ACC
 
-import music_parameter as mp
+import inkamusic.music_parameter as mp
 
 
 def get_rhythm_from_bars_and_beats(beat_indx, start_from_bar, comp_data_2):

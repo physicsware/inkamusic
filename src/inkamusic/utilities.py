@@ -10,10 +10,10 @@ This file contains utility functions
 """
 import random
 import math
-import const
-from const import SUB_INDX, PROP_INDX, LEN_INDX, CR, CR2, CRB, CR_INTRO, CR_ENDING
-from const import PROP_USEPART, PROP_INTRO_BRIDGE_END, PROP_FROM_BAR, PROP_TO_BAR, PROP_ACTUAL_BAR
-import music_parameter as mp
+import inkamusic.const as const
+from inkamusic.const import SUB_INDX, PROP_INDX, LEN_INDX, CR, CR2, CRB, CR_INTRO, CR_ENDING
+from inkamusic.const import PROP_USEPART, PROP_INTRO_BRIDGE_END, PROP_FROM_BAR, PROP_TO_BAR, PROP_ACTUAL_BAR
+import inkamusic.music_parameter as mp
 
 
 class Rndm():

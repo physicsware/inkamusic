@@ -12,8 +12,9 @@ import os
 import random
 import cherrypy
 
-import inkamusic.const
-import inkamusic.webutilities
+import inkamusic.const as const
+import inkamusic.webutilities as webutilities
+
 
 def error_page_404(status, message, traceback, version):
     """error page for http error 404"""
@@ -23,20 +24,24 @@ def error_page_404(status, message, traceback, version):
     return html
 
 
-#if __name__ == '__main__':
+# if __name__ == '__main__':
+
 def start():
+
+    package_dir = os.path.dirname(const.__file__)
+    print('package_dir',package_dir)
 
     # initialize random numbers
     random.seed()
 
     # prepare cherrypy
 
-    STAT_DIR = './public'  # static content
-    KEY_DIR = './keys/'  # location of ssl keys, if used
-    LOG_DIR = './logs/'  # location log files, if used
+    #STAT_DIR = 'public'  # static content
+    # KEY_DIR = 'inkamusic/keys/'  # location of ssl keys, if used
+    # LOG_DIR = './logs/'  # location log files, if used
     print(os.path.abspath(os.getcwd()))
-    CONF = {'/': {'tools.sessions.on': True, 'tools.staticdir.root': const.APP_DIR},
-            '/static': {'tools.staticdir.on': True, 'tools.staticdir.dir': STAT_DIR}
+    CONF = {'/': {'tools.sessions.on': True, 'tools.staticdir.root': package_dir},
+            '/static': {'tools.staticdir.on': True, 'tools.staticdir.dir': const.STAT_DIR}
             }
 
     # cherrypy.config.update({'error_page.404': error_page_404})
@@ -64,5 +69,3 @@ def start():
             cherrypy.server.ssl_certificate_chain = KEY_DIR + const.HTTPS_INTERMEDIATE_FILE
 
     cherrypy.quickstart(webutilities.InkaAlgorithmicMusicWebInterface(), '/', CONF)
-
-

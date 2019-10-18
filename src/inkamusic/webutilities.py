@@ -13,11 +13,11 @@ import datetime
 import string
 import random
 import cherrypy
-import inkamusic.html_data
-import inkamusic.const
-import inkamusic.utilities
-import inkamusic.create_composition
-import inkamusic.settings
+import inkamusic.html_data as html_data
+import inkamusic.const as const
+import inkamusic.utilities as utilities
+import inkamusic.create_composition as create_composition
+import inkamusic.settings as settings
 import inkamusic.general_midi_instruments
 import inkamusic.menu_entries as me
 import inkamusic.music_parameter as mp

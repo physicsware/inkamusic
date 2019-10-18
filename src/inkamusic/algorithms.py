@@ -10,16 +10,16 @@ This file contains the main algorithmic functions
 """
 import math
 import copy
-import trackinfo_util as tu
-import const
-from const import SUB_INDX, PROP_INDX, LEN_INDX, PROP_USEPART, NO_REPEAT
-from const import PROP_FROM_BAR, PROP_ACTUAL_BAR, PROP_START, PROP_END
-from const import RM_REPEAT
-from const import FIRST_BAR_OF_PART, BEAT_RHYTHM, BEAT_MELODY, FIRST_PREVIOUS_TONE
+import inkamusic.trackinfo_util as tu
+import inkamusic.const as const
+from inkamusic.const import SUB_INDX, PROP_INDX, LEN_INDX, PROP_USEPART, NO_REPEAT
+from inkamusic.const import PROP_FROM_BAR, PROP_ACTUAL_BAR, PROP_START, PROP_END
+from inkamusic.const import RM_REPEAT
+from inkamusic.const import FIRST_BAR_OF_PART, BEAT_RHYTHM, BEAT_MELODY, FIRST_PREVIOUS_TONE
 
-import music_parameter as mp
-import rhythm_algorithms
-import utilities
+import inkamusic.music_parameter as mp
+import inkamusic.rhythm_algorithms as rhythm_algorithms
+import inkamusic.utilities as utilities
 
 
 def show_bars_and_beats(txt, bars_beats):

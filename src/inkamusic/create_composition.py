@@ -7,20 +7,20 @@ Copyright (C) 2019  Udo Wollschläger
 
 """
 # pylint  --rcfile = rcudo file
+import os
 import cherrypy
 
-import const
-from const import SUB_INDX
-import trackinfo_util as tu
-
-import basic_scales
-import harmonies
-import structures
-import bar_distribution
-import algorithms
-import music_parameter as mp
-import midiutil
-import rhythm_algorithms
+import inkamusic.const as const
+from inkamusic.const import SUB_INDX
+import inkamusic.trackinfo_util as tu
+import inkamusic.basic_scales as basic_scales
+import inkamusic.harmonies as harmonies
+import inkamusic.structures as structures
+import inkamusic.bar_distribution as bar_distribution
+import inkamusic.algorithms as algorithms
+import inkamusic.music_parameter as mp
+import inkamusic.midiutil as midiutil
+import inkamusic.rhythm_algorithms as rhythm_algorithms
 
 
 def find_first_dissonance(pos, pos_current_tone, tones, current_tone):
@@ -436,8 +436,9 @@ class InkaAlgorithmicMusic():
                 self.create_percussion_midi(current_track, perc_instrument_type, track_id)
 
             midiutil.end_of_track_event(current_track)
-
-        midifilename = const.MID_DIR + self.inka_data['random_file_name'] + '.mid'
+            
+        package_dir = os.path.dirname(const.__file__) + "/"
+        midifilename = package_dir + const.MID_DIR + self.inka_data['random_file_name'] + '.mid'
 
         midiutil.write_midifile(midifilename, midi_pattern)
 

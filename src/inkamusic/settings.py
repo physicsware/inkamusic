@@ -10,12 +10,12 @@ This file defines all settings used to create a musical piece
 """
 
 import copy
-import const
-from const import RNDM_STRUCTURE
-import basic_rhythms
-from general_midi_instruments import GM_INSTRUMENTS as gm
-import menu_entries as me
-import music_parameter as mp
+import inkamusic.const as const
+from inkamusic.const import RNDM_STRUCTURE
+import inkamusic.basic_rhythms as basic_rhythms
+from inkamusic.general_midi_instruments import GM_INSTRUMENTS as gm
+import inkamusic.menu_entries as me
+import inkamusic.music_parameter as mp
 
 
 def get_instrument_by_id(instru_id):
