@@ -17,35 +17,36 @@ import inkamusic.music_parameter as mp
 
 def show_track_info(track_info):
     """prints info about all tracks"""
-    print(' ')
-    print('Track info')
-    print('----------')
-
-    number_of_tracks = len(track_info)
-    print(number_of_tracks, 'tracks')
-    print(' ')
-    for i in range(number_of_tracks):
+    if const.DEBUG_OUTPUT:
         print(' ')
-        print('Track', i)
-        if track_info[i][TRACK_INFO_MELO_OR_PERC_INDX] == const.MELODY_INSTRUMENT:
-            id_1 = track_info[i][TRACK_INFO_INSTRU_DEF_INDX][1]
-            idtx = '(id = ' + repr(id_1) + ')'
-            print('  melody instrument', track_info[i][TRACK_INFO_INSTRU_DEF_INDX][0], idtx, ', as ', end='')
-            txt = ['Bass', 'Chorus', 'Solo', 'Harmony']
-            print(txt[track_info[i][TRACK_INFO_INSTRU_DEF_INDX][const.INSTRUMENT_TYPE_INDX]],
-                  'instrument, playing in ', end='')
-            txt = ['Bass', 'Low', 'Medium', 'High', 'Full']
-            print(txt[track_info[i][TRACK_INFO_INSTRU_DEF_INDX][const.INSTRUMENT_TYPE_2_INDX]], 'register')
+        print('Track info')
+        print('----------')
 
-        else:
-            print('  percussion instrument', track_info[i][TRACK_INFO_INSTRU_DEF_INDX][0], ', as ', end='')
-            txt = ['Stick', 'Accent', 'Bass', 'High', 'Low', 'Ride', 'Snare']
-            print(txt[track_info[i][TRACK_INFO_INSTRU_DEF_INDX][const.INSTRUMENT_TYPE_2_INDX]])
-        print('  Speed:', track_info[i][TRACK_INFO_INSTRU_DEF_INDX][const.INSTRUMENT_SPEED_INDX])
-        print('  Pause:', track_info[i][TRACK_INFO_INSTRU_PAUSE_INDX])
-        print('  Rhythm:', track_info[i][TRACK_INFO_RHYTHM_INDX])
-        print('  Connect probs:', track_info[i][TRACK_INFO_CONNECT_INDX])
-    print(' ')
+        number_of_tracks = len(track_info)
+        print(number_of_tracks, 'tracks')
+        print(' ')
+        for i in range(number_of_tracks):
+            print(' ')
+            print('Track', i)
+            if track_info[i][TRACK_INFO_MELO_OR_PERC_INDX] == const.MELODY_INSTRUMENT:
+                id_1 = track_info[i][TRACK_INFO_INSTRU_DEF_INDX][1]
+                idtx = '(id = ' + repr(id_1) + ')'
+                print('  melody instrument', track_info[i][TRACK_INFO_INSTRU_DEF_INDX][0], idtx, ', as ', end='')
+                txt = ['Bass', 'Chorus', 'Solo', 'Harmony']
+                print(txt[track_info[i][TRACK_INFO_INSTRU_DEF_INDX][const.INSTRUMENT_TYPE_INDX]],
+                      'instrument, playing in ', end='')
+                txt = ['Bass', 'Low', 'Medium', 'High', 'Full']
+                print(txt[track_info[i][TRACK_INFO_INSTRU_DEF_INDX][const.INSTRUMENT_TYPE_2_INDX]], 'register')
+
+            else:
+                print('  percussion instrument', track_info[i][TRACK_INFO_INSTRU_DEF_INDX][0], ', as ', end='')
+                txt = ['Stick', 'Accent', 'Bass', 'High', 'Low', 'Ride', 'Snare']
+                print(txt[track_info[i][TRACK_INFO_INSTRU_DEF_INDX][const.INSTRUMENT_TYPE_2_INDX]])
+            print('  Speed:', track_info[i][TRACK_INFO_INSTRU_DEF_INDX][const.INSTRUMENT_SPEED_INDX])
+            print('  Pause:', track_info[i][TRACK_INFO_INSTRU_PAUSE_INDX])
+            print('  Rhythm:', track_info[i][TRACK_INFO_RHYTHM_INDX])
+            print('  Connect probs:', track_info[i][TRACK_INFO_CONNECT_INDX])
+        print(' ')
 
 
 def create_random_instrumentation(rnd_type, rndm_2):
@@ -132,8 +133,9 @@ def prepare_track_info(track_info, menu_options, rhythm_definition, rndm_2):
 
     # step 1
     # add all instrument tracks to track_info, sorted by instrument type
-    print(' ')
-    print('instrument list is', instrument_list)
+    if const.DEBUG_OUTPUT:
+        print(' ')
+        print('instrument list is', instrument_list)
     for instru_type in [const.T_SOLO, const.T_BASS, const.T_HMNY, const.T_CHOR, const.T_PERC]:
         # count number of instruments with this type
         num_instru_current_type = 0

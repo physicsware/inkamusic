@@ -243,8 +243,9 @@ def create_global_rhythm(selected_rhythm, num_of_beats, min_split_length, rnd_ty
                 global_rhythm[1].append([i[RY_POS], i[RY_ACC]])
             selected_rhythm_reached = True
             selected_rhythm_stripped = strip_blocked(copy.deepcopy(selected_rhythm))
-    print(' ')
-    print('global rhythm is', global_rhythm)
+    if const.DEBUG_OUTPUT:
+        print(' ')
+        print('global rhythm is', global_rhythm)
     return global_rhythm, selected_rhythm_stripped
 
 

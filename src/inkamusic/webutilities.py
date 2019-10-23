@@ -393,15 +393,16 @@ class InkaAlgorithmicMusicWebInterface():
         # initialize random value generation with seed_val
 
         random.seed(a=seed_val)
-        print(' ')
-        print(' ')
-        print(' ')
-        print(' ***   NEW   ***')
-        print(' ')
-        print(' ')
-        print('seed is', seed_val, 'and instru_id is', instru_id_val)
+        if const.DEBUG_OUTPUT:
+            print(' ')
+            print(' ')
+            print(' ')
+            print(' ***   NEW   ***')
+            print(' ')
+            print(' ')
+            print('seed is', seed_val, 'and instru_id is', instru_id_val)
 
-        # initialise random  classes for different parts of the creation process
+        # initialise random classes for different parts of the creation process
         rndm_2 = create_rndm_classes(seed_val, instru_id_val)
 
         # reset all settings
@@ -417,8 +418,13 @@ class InkaAlgorithmicMusicWebInterface():
         # create filename for composition
         random_file_name = create_filename()
 
-        # use file name to identify cherrypy session
-        cherrypy.session['mystring'] = random_file_name
+        try:
+            # use file name to identify cherrypy session
+            cherrypy.session['mystring'] = random_file_name
+
+        except AttributeError:
+            pass 
+
 
         # create InkaAlgorithmicMusic object
         current_composition = create_composition.InkaAlgorithmicMusic(menu_options=self.menu_options,

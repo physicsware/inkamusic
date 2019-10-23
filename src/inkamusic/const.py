@@ -11,6 +11,9 @@ This file contains all global constants
 
 import os
 
+# set tu True for output of structural information of a piece
+DEBUG_OUTPUT = False
+
 # directories
 
 STAT_DIR = 'public'  # public = static dir of cherrypy web server

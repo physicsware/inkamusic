@@ -24,22 +24,23 @@ import inkamusic.utilities as utilities
 
 def show_bars_and_beats(txt, bars_beats):
     """prints bars and beats entries for debugging purposes"""
-    print('Show bars_and_beats:  ', txt)
-    for i in bars_beats:
-        if i[0] == FIRST_BAR_OF_PART:
-            print(' ')
-            print('    Part starts with first bar number', i[1])
-        elif i[0] == BEAT_RHYTHM:
-            print('      rhythm for beat index', i[1])
-            print('          ', i[2])
-        elif i[0] == BEAT_MELODY:
-            print('      melody for beat index', i[1])
-            print('          rule', i[2])
-            if not i[3]:
-                print('          melody entry is empty')
-            else:
-                for j, melody_entry in enumerate(i[3]):
-                    print('          melody entry', j, 'is', melody_entry)
+    if const.DEBUG_OUTPUT:
+        print('Show bars_and_beats:  ', txt)
+        for i in bars_beats:
+            if i[0] == FIRST_BAR_OF_PART:
+                print(' ')
+                print('    Part starts with first bar number', i[1])
+            elif i[0] == BEAT_RHYTHM:
+                print('      rhythm for beat index', i[1])
+                print('          ', i[2])
+            elif i[0] == BEAT_MELODY:
+                print('      melody for beat index', i[1])
+                print('          rule', i[2])
+                if not i[3]:
+                    print('          melody entry is empty')
+                else:
+                    for j, melody_entry in enumerate(i[3]):
+                        print('          melody entry', j, 'is', melody_entry)
 
 
 def get_tone_from_envelope_val(envelope, instru_low, instru_high):
@@ -146,9 +147,7 @@ class InkaAlgorithms():
         inst_low = low + reduce
         reduce = self.comp_data['rndm_2'][const.RNDM_INSTRU].rndm_int(0, max_reduce)
         inst_high = high - reduce
-        if not inst_high - inst_low + 1 >= mp.MIN_RANGE:
-            print(1/0)
-            return low, high
+        assert inst_high - inst_low + 1 >= mp.MIN_RANGE
 
         return inst_low, inst_high
 
@@ -888,10 +887,11 @@ class InkaAlgorithms():
                 level -= 1
 
             else:  # create oder repeat part
-                print(' ')
-                for _ in range(level):
-                    print('    ', end='')
-                print(' Now starts create_part (part', part_no, ')')
+                if const.DEBUG_OUTPUT:
+                    print(' ')
+                    for _ in range(level):
+                        print('    ', end='')
+                    print(' Now starts create_part (part', part_no, ')')
                 self.create_part(c_strct[part_no])
 
     def createmelody(self):
@@ -919,12 +919,14 @@ class InkaAlgorithms():
 
         if harmony_track != []:
             c_3['harmony_bars_and_beats'] = harmony_track.get_bars_and_beats()
-            print(' ')
-            print('Now starts new track, ID =', self.comp_data['track_id'])
+            if const.DEBUG_OUTPUT:
+                print(' ')
+                print('Now starts new track, ID =', self.comp_data['track_id'])
         else:
             c_3['harmony_bars_and_beats'] = []
-            print(' ')
-            print('Now starts harmony track')
+            if const.DEBUG_OUTPUT:
+                print(' ')
+                print('Now starts harmony track')
 
         self.createmelody()
 

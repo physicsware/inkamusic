@@ -128,33 +128,34 @@ def show_composition_structure(comp_struct, level):
             return txt
         return ''
 
-    txt = ''
-    for _ in range(level):
-        txt += '   '
-    print('')
-    print('')
-    print(txt, 'Level', level)
-    if level == 0:
-        print(txt, 'Length', comp_struct[LEN_INDX])
-        if comp_struct[SUB_INDX] == []:
-            pass
-        else:
-            level += 1
-            show_composition_structure(comp_struct[SUB_INDX], level)
-            level -= 1
-    else:
-
-        for i, comp_struct_entry in enumerate(comp_struct):
-            print('')
-            print(txt, 'Part', i)
-
-            if comp_struct_entry[SUB_INDX] == []:
-                print(txt, 'Length', comp_struct_entry[LEN_INDX], ' ', format_props(comp_struct_entry[PROP_INDX]))
+    if const.DEBUG_OUTPUT:
+        txt = ''
+        for _ in range(level):
+            txt += '   '
+        print('')
+        print('')
+        print(txt, 'Level', level)
+        if level == 0:
+            print(txt, 'Length', comp_struct[LEN_INDX])
+            if comp_struct[SUB_INDX] == []:
+                pass
             else:
-                print(txt, 'Length', comp_struct_entry[LEN_INDX])
                 level += 1
-                show_composition_structure(comp_struct_entry[SUB_INDX], level)
+                show_composition_structure(comp_struct[SUB_INDX], level)
                 level -= 1
+        else:
+
+            for i, comp_struct_entry in enumerate(comp_struct):
+                print('')
+                print(txt, 'Part', i)
+
+                if comp_struct_entry[SUB_INDX] == []:
+                    print(txt, 'Length', comp_struct_entry[LEN_INDX], ' ', format_props(comp_struct_entry[PROP_INDX]))
+                else:
+                    print(txt, 'Length', comp_struct_entry[LEN_INDX])
+                    level += 1
+                    show_composition_structure(comp_struct_entry[SUB_INDX], level)
+                    level -= 1
 
 
 def get_up_down_equal_characteristics(rndm_local):

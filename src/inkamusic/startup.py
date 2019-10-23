@@ -15,36 +15,22 @@ import cherrypy
 import inkamusic.const as const
 import inkamusic.webutilities as webutilities
 
-
-def error_page_404(status, message, traceback, version):
-    """error page for http error 404"""
-    del traceback  # pylint warning
-    html = "Error {}. {}. {} - Well, I'm very sorry but you haven't paid!".format(status, message, version)
-    html += """<a href ="/">back</a>"""
-    return html
-
-
-# if __name__ == '__main__':
-
 def start():
 
     package_dir = os.path.dirname(const.__file__)
-    print('package_dir',package_dir)
 
     # initialize random numbers
     random.seed()
 
     # prepare cherrypy
 
-    #STAT_DIR = 'public'  # static content
     # KEY_DIR = 'inkamusic/keys/'  # location of ssl keys, if used
     # LOG_DIR = './logs/'  # location log files, if used
-    print(os.path.abspath(os.getcwd()))
+    
     CONF = {'/': {'tools.sessions.on': True, 'tools.staticdir.root': package_dir},
             '/static': {'tools.staticdir.on': True, 'tools.staticdir.dir': const.STAT_DIR}
             }
 
-    # cherrypy.config.update({'error_page.404': error_page_404})
     # remove # to activate logs
     # cherrypy.log.access_file = LOG_DIR + 'accesstest.txt'
     # cherrypy.log.error_file = LOG_DIR + 'errortest.txt'

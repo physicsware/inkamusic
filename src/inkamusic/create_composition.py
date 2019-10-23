@@ -489,9 +489,14 @@ class InkaAlgorithmicMusic():
 
         c_2 = self.inka_data_2
         c_3 = self.inka_data_3
+        
+        try:
+            # to do: is this line correct? is it necessary?
+            cherrypy.session.release_lock()
 
-        # to do: is this line correct? is it necessary?
-        cherrypy.session.release_lock()
+        except AttributeError:
+            pass 
+
 
         # get num of beats (per bar) for selected rhythm
         c_2['num_of_beats'] = self.inka_data['menu_options'].get_num_of_beats()
@@ -502,7 +507,8 @@ class InkaAlgorithmicMusic():
         # calculate slightly corrected bpm to ensure number of bars is multiple of 4 AND length
         # of composition is as set in web interface
         c_2['bpm'] = self.inka_data['menu_options'].get_corrected_bpm(c_2['num_of_beats'], c_2['length_in_seconds'])
-        print('bpm is', c_2['bpm'])
+        if const.DEBUG_OUTPUT:
+            print('bpm is', c_2['bpm'])
 
         c_2['num_of_bars'] = self.calc_num_of_bars()
 

@@ -263,10 +263,11 @@ class Settings():
                 already_used.append(use_type)
             else:
                 already_used.append(harmony_type)
-        print(' ')
-        for harmony_type in self.comp_data['selected_scale'][const.SCALE_HARMONY_TYPES_INDX]:
+        if const.DEBUG_OUTPUT:
+            print(' ')
+            for harmony_type in self.comp_data['selected_scale'][const.SCALE_HARMONY_TYPES_INDX]:
 
-            print('harmony used is', harmony_object.get_harmony_steps_from_type(harmony_type))
+                print('harmony used is', harmony_object.get_harmony_steps_from_type(harmony_type))
 
     def __set_selected_percussion(self, txt):
         """sets selected percussion option"""
@@ -393,8 +394,7 @@ class Settings():
 #
 #                 while self.comp_data['smallest_part_length'] * 8 > num_of_bars:
 #                      self.comp_data['smallest_part_length'] -= 2
-        print(' ')
-        print('smallest_part_length length is', self.comp_data['smallest_part_length'])
+
         assert self.comp_data['smallest_part_length'] > 0, "Problem with smallest_part_length length"
 
     def get_smallest_part_length(self):

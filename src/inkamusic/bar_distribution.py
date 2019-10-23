@@ -28,15 +28,16 @@ class BarDistribution():
 
     def show_bar_distribution(self):
         """prints bar distribution for debugging purposes"""
-        print(' ')
-        for i in range(1, len(self.bar_distribution)):  # bar numbers start at 1, index 0 not used
-            if self.bar_distribution[i][USED_HOW_OFTEN] == 0:  # bar is a repeated bar
-                print('bar', i, ' (not created)')
-            else:
-                print('bar', i, ' is used', self.bar_distribution[i][USED_HOW_OFTEN],
-                      'times, bar is part of group starting at bar', self.bar_distribution[i][1])
-                print('       harmony type is', self.bar_distribution[i][const.HARMONY_IDENTIFIER])
-                print('       create type is', self.bar_distribution[i][CREATE_TYPE_IDENTIFIER])
+        if const.DEBUG_OUTPUT:
+            print(' ')
+            for i in range(1, len(self.bar_distribution)):  # bar numbers start at 1, index 0 not used
+                if self.bar_distribution[i][USED_HOW_OFTEN] == 0:  # bar is a repeated bar
+                    print('bar', i, ' (not created)')
+                else:
+                    print('bar', i, ' is used', self.bar_distribution[i][USED_HOW_OFTEN],
+                          'times, bar is part of group starting at bar', self.bar_distribution[i][1])
+                    print('       harmony type is', self.bar_distribution[i][const.HARMONY_IDENTIFIER])
+                    print('       create type is', self.bar_distribution[i][CREATE_TYPE_IDENTIFIER])
 
     def create_bar_distribution(self, bar_struct):
         """ This functions counts for each created (i. e. not repeated) bar, how often this
@@ -150,10 +151,10 @@ class BarDistribution():
 
         if self.c_2['num_of_bars'] > 3:
             self.set_non_special_bars_harmony_types(harmony_list, num_of_bars_to_reach, num_of_bars_currently_assigned)
-
-        print(' ')
-        for i, entry in enumerate(harmony_list):
-            print('harmony id', entry, 'is used in', num_of_bars_currently_assigned[i], 'bars')
+        if const.DEBUG_OUTPUT:
+            print(' ')
+            for i, entry in enumerate(harmony_list):
+                print('harmony id', entry, 'is used in', num_of_bars_currently_assigned[i], 'bars')
         self.show_bar_distribution()
 
     def init_play_state(self, track):
@@ -161,7 +162,6 @@ class BarDistribution():
         if track == -1:  # all tracks
             first = 0
             last = self.c_2['number_of_tracks']
-            print('set last to',self.c_2['number_of_tracks'])
         else:
             first = track
             last = track + 1
@@ -185,7 +185,6 @@ class BarDistribution():
     def do_list_type_pause(self, pause, track):
         """sets pauses in tracks depending on instruments distribution catalogs"""
         special_cr = pause[track]
-        print('track, pause[track]',track, pause[track])
         for current_cr_type in special_cr:
             # count number of bars
             cr_type_bars = 0
@@ -297,8 +296,6 @@ class BarDistribution():
         """sets the pause status for each bar within each track"""
 
         pause = []
-        print('XXXX')
-        self.show_bar_distribution()
         max_non_percussion_track = -1
         perc_track_found = False
         for track in range(self.c_2['number_of_tracks']):

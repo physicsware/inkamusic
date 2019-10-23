@@ -992,6 +992,5 @@ LOGICPRO_PERCUSSION = [
     ]
 if mp.LOGIC_PRO_MIDI_SETTINGS:
     GM_INSTRUMENTS = GM_MELODY + LOGICPRO_PERCUSSION  # GM_PERCUSSION
-    print('using specific midi settings for Logic Pro')
 else:
     GM_INSTRUMENTS = GM_MELODY + GM_PERCUSSION

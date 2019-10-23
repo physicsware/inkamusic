@@ -694,15 +694,16 @@ class CompositionStructure():
 
     def show_bar_struct(self):
         """ shows bar_struct structure for debugging purposes"""
-        print(' ')
-        for i in range(len(self.bar_struct)):
-            if self.bar_struct[i][0] == BAR_GROUP:
-                print(' ')
-                print('Now follows group of', self.bar_struct[i][2], 'bars, starting with global bar number',
-                      self.bar_struct[i][1])
-            else:
-                if self.bar_struct[i][2][0] == BAR_REPEATED:
-                    txt = ': Repeat global bar'
+        if const.DEBUG_OUTPUT:
+            print(' ')
+            for i in range(len(self.bar_struct)):
+                if self.bar_struct[i][0] == BAR_GROUP:
+                    print(' ')
+                    print('Now follows group of', self.bar_struct[i][2], 'bars, starting with global bar number',
+                          self.bar_struct[i][1])
                 else:
-                    txt = ': Create global bar'
-                print('  group bar', self.bar_struct[i][1], txt, self.bar_struct[i][3])
+                    if self.bar_struct[i][2][0] == BAR_REPEATED:
+                        txt = ': Repeat global bar'
+                    else:
+                        txt = ': Create global bar'
+                    print('  group bar', self.bar_struct[i][1], txt, self.bar_struct[i][3])
