@@ -1,7 +1,7 @@
 ======================
 inkamusic
 ======================
-Please note: inkamusic is currently being converted to open-source. A first working version will be available soon.
+Please note: inkamusic is currently being converted to open-source. A first usable version will be available soon.
 --------
 
 .. image:: https://img.shields.io/pypi/v/inkamusic.svg
