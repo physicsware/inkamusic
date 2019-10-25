@@ -15,17 +15,26 @@ A first usable version will be available soon.
 inkamusic creates instrumental music, based on rules. This includes structure, rhythm, melody, harmonization and instrumentation. A simple web interface (with CherryPy) offers the possibility to choose from several options. The output format is a MIDI file that can be played with many applications, e.g. Garageband or VLC on MacOS or Windows Media Player on Windows. Or try https://musescore.org/en, which not only plays the midi files, but also displays the score.
 
 
-* Free software: GNU General Public License v3
-* Documentation: https://inka-algorithmic-music.readthedocs.io.
+## Installation
 
+You can download and install the latest version of this software from the Python package index (PyPI) as follows:
 
-Features
---------
+    pip install --upgrade inkamusic
 
-* inkamusic creates rule based fully arranged instrumental music.
-* creates midi files based on a few simple settings, accessible through a local web interface. 
-* 
+## Usage
 
-Credits
--------
+To use the stand alone version run
+
+    inkamusic
+  
+ This will start a local CherryPy web server. Now open a browser window and enter
+ 
+      http://127.0.0.1:8080
+      
+  Select options and use the Create button to create a MIDI file. Depending on your browser settings this file will be downloaded or opened. See Overview for additional hints.
+  
+  inkamusic can also be used as imported module, but this feature is in a preliminary state. More information will be added later.
+
+## Credits
+
 uses the CherryPy Web Framework https://cherrypy.org/
