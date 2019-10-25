@@ -29,11 +29,11 @@ To use the stand alone version run
   
  This will start a local CherryPy web server. Now open a browser window and enter
  
-      http://127.0.0.1:8080
+    http://127.0.0.1:8080
       
-  Select options and use the Create button to create a MIDI file. Depending on your browser settings this file will be downloaded or opened. See Overview for additional hints.
+Select options and use the Create button to create a MIDI file. Depending on your browser settings this file will be downloaded or opened. See Overview for additional hints.
   
-  inkamusic can also be used as imported module, but this feature is in a preliminary state. More information will be added later.
+inkamusic can also be used as an imported module, but this feature is in a preliminary state. More information will be added later.
 
 ## Credits
 
