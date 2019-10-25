@@ -1,7 +1,8 @@
 ======================
 inkamusic
 ======================
-Please note: inkamusic is currently being converted to open-source. A first usable version is expected to be available soon.
+Please note: inkamusic is currently being converted to open-source. A first usable version will be available soon.
+--------
 
 .. image:: https://img.shields.io/pypi/v/inkamusic.svg
         :target: https://pypi.python.org/pypi/inkamusic
@@ -30,8 +31,10 @@ inkamusic creates rule based fully arranged instrumental music.
 Features
 --------
 
-* TODO
+* inkamusic creates rule based fully arranged instrumental music.
+* creates midi files based on a few simple settings, accessible through a local web interface. 
+* 
 
 Credits
 -------
-
+uses the CherryPy Web Framework https://cherrypy.org/
