@@ -1,8 +1,10 @@
-======================
-inkamusic
-======================
+# inkamusic
+
 Please note: inkamusic is currently being converted to open-source. A first usable version will be available soon.
 --------
+[![image](https://img.shields.io/pypi/v/inkamusic.svg)](https://pypi.org/project/inkamusic/)
+[![image](https://img.shields.io/pypi/l/inkamusic.svg)](https://pypi.org/project/inkamusic/)
+[![image](https://img.shields.io/pypi/pyversions/inkamusic.svg)](https://pypi.org/project/inkamusic/)
 
 .. image:: https://img.shields.io/pypi/v/inkamusic.svg
         :target: https://pypi.python.org/pypi/inkamusic
