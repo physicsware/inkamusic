@@ -14,12 +14,7 @@
 .. image:: https://img.shields.io/pypi/pyversions/inkamusic.svg
    :target: https://pypi.org/project/inkamusic/
    :alt: image
-
-
-.. image:: https://img.shields.io/travis/physicsware/inkamusic/master.svg?logo=travis
-   :target: https://travis-ci.org/physicsware/inkamusic
-   :alt: Travis
-
+   
 
 .. image:: https://readthedocs.org/projects/inkamusic/badge/?version=latest
    :target: https://inkamusic.readthedocs.io/en/latest/?badge=latest
