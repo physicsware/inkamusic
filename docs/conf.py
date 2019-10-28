@@ -25,7 +25,7 @@ author = 'Udo Wollschläger'
 release = '0.2.0'
 version = '0.2.0'
 
-
+master_doc = 'index'
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
