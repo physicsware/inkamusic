@@ -155,6 +155,7 @@ class CompositionStructure():
         top level (level 0): comp_struct = [num_of_bars, property array, sub level array]
 
         Level 1 divides the composition into n parts using 6 different part types:
+
         - Standard parts, which will contain composed music. A standard part will have
           approximately the length given by melody_length. If it were longer it would have been
           subdivided further.
@@ -485,6 +486,7 @@ class CompositionStructure():
                 num_of_parts = len(form_struct) + 1  # 2 for ending
         else:
             form_struct = get_random_struct(self.base_data['rndm_2'], max_num_of_subdivisions)
+
             # replace CR types by current CR type
             for i, struct_type in enumerate(form_struct):
                 if struct_type == CR:
@@ -558,12 +560,16 @@ class CompositionStructure():
         else:
             cr_type = 0
 
+        if creating_level_one:
+            # - 2 to account for possible intro or ending
+            max_num_of_subdivisions = max((level_data['parent_level_part_length'] - 2) // self.smallest_part_length, 1)
+            # divide again so that in general at least one level below the top level is possible
+            max_num_of_subdivisions = max(max_num_of_subdivisions // min(self.smallest_part_length, 3), 1)
+        else:
+
+            max_num_of_subdivisions = max(level_data['parent_level_part_length'] // self.smallest_part_length, 1)
+
         # subdivision only if parent part is big enough and never for last (ending) part
-        max_num_of_subdivisions = level_data['parent_level_part_length'] // self.smallest_part_length
-
-        if creating_level_one:  # divide again so that at least one level below the top level is possible
-            max_num_of_subdivisions = max_num_of_subdivisions // min(self.smallest_part_length, 3)
-
         if creating_level_one or ((max_num_of_subdivisions > 2) and level_data['upper_level_end'] != 0):
             # try to find subdivision (with the exception of level 1 this subdivision will contain
             # at least 3 parts
@@ -660,11 +666,12 @@ class CompositionStructure():
            The resulting array self.bar_struct contains a start record for each group of bars
            ( bar_struct[i] = [BAR_GROUP, number of first bar in group, length of group]) and then the
            individual bars of the group
-           (bar_struct[i + j] = [BAR_INFO,
-                                bar index within group,
-                                [BAR_REPEATED or BAR_NOT_REPEATED, number of first bar in group],
-                                original bar number,
-                                create_type])
+           (bar_struct[i + j] =
+           [BAR_INFO,
+           bar index within group,
+           [BAR_REPEATED or BAR_NOT_REPEATED,
+           number of first bar in group],
+           original bar number, create_type])
            A bar group is identified by its first bar number.
         """
 

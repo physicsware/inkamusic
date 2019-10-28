@@ -253,7 +253,7 @@ class BasicRhythm():
                        ],
               ],
              [P_HIGH, [[BEAT_3 + HALF_BEAT + QUART_BEAT, 2], [BEAT_4 + HALF_BEAT, 2],
-                      ],
+                       ],
               ],
              [P_SNARE, [[BEAT_2 + HALF_BEAT + QUART_BEAT, 2],
                         ],

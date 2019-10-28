@@ -1,5 +1,5 @@
-inkamusic
-=========
+inkamusic's modules
+-------------------
 
 .. toctree::
    :maxdepth: 4

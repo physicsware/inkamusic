@@ -9,7 +9,6 @@ This file contains all global constants
 
 """
 
-import os
 
 # set tu True for output of structural information of a piece
 DEBUG_OUTPUT = False
@@ -18,6 +17,7 @@ DEBUG_OUTPUT = False
 
 STAT_DIR = 'public'  # public = static dir of cherrypy web server
 MID_DIR = STAT_DIR+'/midi/'  # midi file sub directory
+LOG_DIR = STAT_DIR+'/logs/'  # cherrypy error log sub directory
 
 HTTP_PORT = 8080
 HTTPS_PORT = 0  # 8443, 0 disables https support
@@ -73,7 +73,7 @@ PROP_ACTUAL_BAR = 4
 PROP_START = 5
 PROP_END = 6
 
-# instrument usage type
+# instrument usage type (role)
 T_BASS = 0
 T_CHOR = 1
 T_SOLO = 2

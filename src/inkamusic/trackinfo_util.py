@@ -113,9 +113,8 @@ def prepare_track_info(track_info, menu_options, rhythm_definition, rndm_2):
         for each track:
          track_info[track_no][TRACK_INFO_MELO_OR_PERC_INDX] = melody or percussion instrument
          track_info[track_no][TRACK_INFO_INSTRU_DEF_INDX] = instrument definition
-         track_info[track_no][TRACK_INFO_RHYTHM_INDX] = track rhythm
-                  (track rhythm will be added here for percussion tracks and will
-                   be added later in create_track_rhythm for melody tracks)
+         track_info[track_no][TRACK_INFO_RHYTHM_INDX] = track rhythm (track rhythm will be added here for percussion
+         tracks and will be added later in create_track_rhythm for melody tracks)
          track_info[track_no][TRACK_INFO_CONNECT_INDX] = probability tuple for connection types
     """
 

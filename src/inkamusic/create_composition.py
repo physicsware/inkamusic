@@ -436,7 +436,7 @@ class InkaAlgorithmicMusic():
                 self.create_percussion_midi(current_track, perc_instrument_type, track_id)
 
             midiutil.end_of_track_event(current_track)
-            
+
         package_dir = os.path.dirname(const.__file__) + "/"
         midifilename = package_dir + const.MID_DIR + self.inka_data['random_file_name'] + '.mid'
 
@@ -489,14 +489,13 @@ class InkaAlgorithmicMusic():
 
         c_2 = self.inka_data_2
         c_3 = self.inka_data_3
-        
+
         try:
             # to do: is this line correct? is it necessary?
             cherrypy.session.release_lock()
 
         except AttributeError:
-            pass 
-
+            pass
 
         # get num of beats (per bar) for selected rhythm
         c_2['num_of_beats'] = self.inka_data['menu_options'].get_num_of_beats()
@@ -519,7 +518,6 @@ class InkaAlgorithmicMusic():
                                                                            self.inka_data['rndm_2'])
 
         # set other values, which depend on num_of_bars
-
         self.inka_data['menu_options'].set_intro_ending_bridge_melody_length(self.inka_data['rndm_2'],
                                                                              c_2['num_of_bars'])
 

@@ -167,7 +167,7 @@ class BarDistribution():
             last = track + 1
         for track_num in range(first, last):
             for bar_num in range(1, self.c_2['num_of_bars'] + 1):
-                if self.bar_distribution[bar_num][USED_HOW_OFTEN] != 0: #  not for repeated bars
+                if self.bar_distribution[bar_num][USED_HOW_OFTEN] != 0:  # not for repeated bars
                     maxindex = len(self.bar_distribution[bar_num]) - 1
                     if maxindex < (PLAYED_IN_TRACK + track_num):
                         self.bar_distribution[bar_num].append(1)
@@ -196,7 +196,7 @@ class BarDistribution():
             cr_type_bars_to_pause = mp.PERC_CR_BARS_PAUSES * cr_type_bars // 100
 
             for bar_num in range(1, self.c_2['num_of_bars'] + 1):
-                if self.bar_distribution[bar_num][USED_HOW_OFTEN] != 0: #  not for repeated bars
+                if self.bar_distribution[bar_num][USED_HOW_OFTEN] != 0:  # not for repeated bars
                     cr_type = self.bar_distribution[bar_num][CREATE_TYPE_IDENTIFIER]
                     if cr_type == current_cr_type:  # no pause
                         if cr_type_bars_to_pause > 0 and \

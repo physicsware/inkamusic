@@ -153,10 +153,12 @@ def get_rhythm(txt):
 
     return [entry[1] for entry in me.RHYTHM_LIST if len(entry) > 0 and entry[0] == txt][0]
 
+
 def get_rhythm_bpm(txt):
     """ returns bpm range of specific basic rhythm"""
 
-    return [(entry[2],entry[3]) for entry in me.RHYTHM_LIST if len(entry) > 0 and entry[0] == txt][0]
+    return [(entry[2], entry[3]) for entry in me.RHYTHM_LIST if len(entry) > 0 and entry[0] == txt][0]
+
 
 def get_speed(txt):
     """ returns bpm limits for specific speed"""
@@ -389,11 +391,8 @@ class Settings():
             else:
                 self.comp_data['smallest_part_length'] \
                  = rndm_2[RNDM_STRUCTURE].rndm_choice(me.SMALLEST_PART_LENGTH_OPTIONS)
-#                 while self.comp_data['smallest_part_length'] + 2 > num_of_bars:  # + 2 for ending (minimum value)
-#                     self.comp_data['smallest_part_length'] -= 2
-#
-#                 while self.comp_data['smallest_part_length'] * 8 > num_of_bars:
-#                      self.comp_data['smallest_part_length'] -= 2
+                if self.comp_data['smallest_part_length'] + 2 > num_of_bars:
+                    self.comp_data['smallest_part_length'] = num_of_bars - 2
 
         assert self.comp_data['smallest_part_length'] > 0, "Problem with smallest_part_length length"
 

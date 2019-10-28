@@ -390,8 +390,10 @@ class BasicScale():
         """returns basic_scale given by length and index
            all scales start at tone C unless shifted by based_on_note
            pattern_starts_at is the index where the scale pattern starts
-           example: a C-major scale uses 7 65 with pattern_starts_at=0 and based_on_note Note_C
-                    a A-minor scale uses 7 65 with pattern_starts_at=9 and based_on_note Note_A"""
+           examples:
+           a C-major scale uses 7 65 with pattern_starts_at=0 and based_on_note Note_C
+           a A-minor scale uses 7 65 with pattern_starts_at=9 and based_on_note Note_A"""
+
         return [self.all_basic_scales[len_indx - 3]
                 [count_indx][(i - based_on_note + pattern_starts_at) % 12] for i in range(12)]
 

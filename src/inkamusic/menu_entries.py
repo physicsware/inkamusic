@@ -5,25 +5,20 @@ Inka Algorithmic Music
 Creates fully arranged algorithmic instrumental music.
 Copyright (C) 2018  Udo Wollschläger
 
-This file contains all menu entries
+This file contains all menu entries used in the web interface or, for now, as parameters to the webutilities
+generate function
 """
 
 from inkamusic.const import TICKSRES
-from inkamusic.const import NOTE_C, NOTE_CIS, NOTE_D, NOTE_DIS, NOTE_E, NOTE_F  # pylint: disable=unused-import
-from inkamusic.const import NOTE_FIS, NOTE_G, NOTE_GIS, NOTE_A, NOTE_BFLAT, NOTE_B  # pylint: disable=unused-import
+from inkamusic.const import NOTE_C, NOTE_CIS, NOTE_D, NOTE_DIS  # noqa: F401 # pylint: disable=unused-import
+from inkamusic.const import NOTE_E, NOTE_F, NOTE_FIS  # noqa: F401 # pylint: disable=unused-import
+from inkamusic.const import NOTE_G, NOTE_GIS, NOTE_A, NOTE_BFLAT, NOTE_B  # noqa: F401 # pylint: disable=unused-import
 from inkamusic.const import HARMONY_PREFER_MAJOR_VAR, HARMONY_PREFER_MINOR_VAR, HARMONY_ANY, HARMONY_AVOID_MAJMIN
 from inkamusic.const import HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR
-from inkamusic.const import T_SOLO, T_CHOR, T_HMNY, T_BASS, R_HIGH, R_MEDI, R_LOW, R_BASS, R_FULL  # pylint: disable=unused-import
-
+from inkamusic.const import T_SOLO, T_CHOR, T_HMNY, T_BASS, R_HIGH  # noqa: F401 # pylint: disable=unused-import
+from inkamusic.const import R_MEDI, R_LOW, R_BASS, R_FULL  # noqa: F401 # pylint: disable=unused-import
 
 INSTRUMENTATION_LIST = [
-    ['Random instrumentation', [[0]]],
-    ['Random bass only', [[1]]],
-    ['Random harmony instrument only', [[2]]],
-    ['Random solo instrument only', [[3]]],
-    ['Random double solo', [[4]]],
-    [],  # separator line
-
     ['Piano + Bass',
      [
          ['Grand Piano', T_SOLO, R_MEDI],
@@ -32,6 +27,15 @@ INSTRUMENTATION_LIST = [
          ['Grand Piano', T_HMNY, R_MEDI],
          ['Fingered Bass', T_BASS, R_BASS],
          ],
+     ],
+    ['Classical Guitars + Bass',
+     [
+         ['Nylon String Guitar', T_SOLO, R_MEDI],
+         ['Nylon String Guitar', T_SOLO, R_FULL],
+         ['Nylon String Guitar', T_CHOR, R_MEDI],
+         ['Nylon String Guitar', T_HMNY, R_MEDI],
+         ['Acoustic Bass', T_BASS, R_BASS],
+      ],
      ],
     ['Marimba + Bass',
      [
@@ -42,6 +46,34 @@ INSTRUMENTATION_LIST = [
          ['Fingered Bass', T_BASS, R_BASS],
       ],
      ],
+    ['Sax + Bass',
+     [
+         ['Tenor Sax', T_SOLO, R_MEDI],
+         ['Tenor Sax', T_SOLO, R_FULL],
+         ['Bright Grand Piano', T_CHOR, R_MEDI],
+         ['Nylon String Guitar', T_HMNY, R_MEDI],
+         ['Fingered Bass', T_BASS, R_BASS],
+      ],
+     ],
+    [],  # separator line
+    ['Synth 1',
+     [
+         ['Saw Wave', T_SOLO, R_MEDI],
+         ['Warm Pad', T_SOLO, R_HIGH],
+         ['Synth Strings 2', T_HMNY, R_MEDI],
+         ['Synth Bass 2', T_BASS, R_BASS],
+      ],
+     ],
+    ['Synth 2',
+     [
+         ['Synth Brass 2', T_SOLO, R_MEDI],
+         ['Square Lead', T_SOLO, R_HIGH],
+         ['5th Sawtooth Wave', T_CHOR, R_MEDI],
+         ['Polysynth', T_CHOR, R_MEDI],
+         ['Synth Bass 3', T_BASS, R_BASS],
+      ],
+     ],
+    [],  # separator line
     ['Strings',
      [
          ['Strings', T_SOLO, R_MEDI],
@@ -60,22 +92,35 @@ INSTRUMENTATION_LIST = [
          ['Tuba', T_BASS, R_BASS],
       ],
      ],
+    [],  # separator line
+    ['Random instrumentation', [[0]]],
 
-    ['Classical Guitars + Bass',
-     [
-         ['Nylon String Guitar', T_SOLO, R_MEDI],
-         ['Nylon String Guitar', T_SOLO, R_FULL],
-         ['Nylon String Guitar', T_CHOR, R_MEDI],
-         ['Nylon String Guitar', T_HMNY, R_MEDI],
-         ['Acoustic Bass', T_BASS, R_BASS],
-      ],
-     ],
     #     ['Electric Guitars + Bass', [[206, 25], [205, 12], [774, 12],  [261, 25]]],
     #     [],  # separator line
     #     ['Sine', [[698, 40], [697, 40], [695, 40], [702, 40]]],
     #     ['Polysynth', [[563, 40], [560, 40], [561, 40]]],
 
     ]
+
+"""an instrumentation list entry defines the specific instruments, their register and role in an instrumentation
+
+possible roles are
+
+- T_BASS bass instrument
+- T_CHOR chorus instrument
+- T_SOLO solo instrument
+- T_HMNY harmony instrument (generates chords)
+- T_PERC percussion instrument
+
+possible registers are
+
+- R_BASS bass
+- R_LOW low
+- R_MEDI medium
+- R_HIGH high
+- R_FULL full instrument range
+
+"""
 
 LENGTH_MIN = [
     ['0 min', 0],
@@ -104,52 +149,53 @@ LENGTH_SEC = [
     ['55 s', 55],
     ]
 
-""" a scale is defined by:
 
-     - title,
-     - number of tones,
-     - index of basic_scale as defined in basic_scales
-       (example: the same basic_scale (7, 65) is used for c major, c minor, d major, ...)
-     - index of first tone (0 - 11) within basic_scale, this defines the start position within the scale
-       (example: if this is set to 0 for scale (7, 65) a major scale is fixed, so c major and d major are still
-                 possible, but not c minor)
-     - interpretation ( = absolute height) of first tone, i.e. c, cis, d, dis, ...
-       (if set to c in the example above the scale is now fixed as c major)
-     - 1, 2, or 3 harmony IDs as defined in harmonies,
-       first ID defines main harmony, 2nd and 3rd (if defined) are used less often
-     - the first harmony must be buildable with the first tone as starting point
-       for example, if c-major is defined as described above, the first harmony can not
-       be minor (which is not buildable over c)
-    """
 SCALES_LIST = [
-    ['C maj', [7, 65, 0, NOTE_C, [HARMONY_PREFER_MAJOR]]],
-    ['C maj maj7', [7, 65, 0, NOTE_C, [HARMONY_PREFER_MAJOR, 43]]],
-    ['C maj min', [7, 65, 0, NOTE_C, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
-    ['D maj min', [7, 65, 0, NOTE_D, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
-    ['F maj min', [7, 65, 0, NOTE_F, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
-    ['G maj min', [7, 65, 0, NOTE_G, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
-    ['A maj min', [7, 65, 0, NOTE_A, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
+    ['C (maj)', [7, 65, 0, NOTE_C, [HARMONY_PREFER_MAJOR]]],
+    ['C (maj+maj7)', [7, 65, 0, NOTE_C, [HARMONY_PREFER_MAJOR, 43]]],
+    ['C (maj+min)', [7, 65, 0, NOTE_C, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
+    ['F (maj+min)', [7, 65, 0, NOTE_F, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
+    ['A (maj+min)', [7, 65, 0, NOTE_A, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
     [],  # separator line
-    ['A min maj (harmonic)', [7, 55, 4, NOTE_A, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR]]],
-    ['A min maj (natural)', [7, 65, 9, NOTE_A, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR]]],
-    ['A min maj (melodic)', [7, 64, 9, NOTE_A, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR_VAR, HARMONY_ANY]]],
-    ['A min min7', [7, 65, 9, NOTE_A, [HARMONY_PREFER_MINOR, 48]]],
+    ['A harmonic (min maj)', [7, 55, 4, NOTE_A, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR]]],
+    ['A natural (min maj)', [7, 65, 9, NOTE_A, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR]]],
+    ['A melodic (min maj)', [7, 64, 9, NOTE_A, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR_VAR, HARMONY_ANY]]],
+    ['A (min min7)', [7, 65, 9, NOTE_A, [HARMONY_PREFER_MINOR, 48]]],
     [],  # separator line
-    ['C-minor blues', [6, 63, 5, NOTE_C, [HARMONY_PREFER_MINOR_VAR, HARMONY_PREFER_MAJOR_VAR, HARMONY_ANY]]],
+    ['C (minor blues)', [6, 63, 5, NOTE_C, [HARMONY_PREFER_MINOR_VAR, HARMONY_PREFER_MAJOR_VAR, HARMONY_ANY]]],
     [],  # separator line
-    ['C-min Pentatonic', [5, 58, 5, NOTE_C, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR]]],
-    ['C-maj Pentatonic', [5, 58, 8, NOTE_C, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
+    ['C (minor Pentatonic)', [5, 58, 5, NOTE_C, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR]]],
+    ['C (major Pentatonic)', [5, 58, 8, NOTE_C, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
     ['Japanese Pentatonic', [5, 38, 11, NOTE_C, [HARMONY_PREFER_MAJOR_VAR, HARMONY_PREFER_MINOR_VAR, HARMONY_ANY]]],
     ['Chinese Pentatonic', [5, 43, 0, NOTE_C, [HARMONY_AVOID_MAJMIN, HARMONY_PREFER_MAJOR_VAR]]],
     ['Byzantine', [7, 54, 11, NOTE_C, [HARMONY_PREFER_MINOR_VAR, HARMONY_ANY, HARMONY_ANY]]],
     [],  # separator line
-    ['6 tone maj', [6, 70, 3, NOTE_C, [HARMONY_PREFER_MAJOR]]],
-    ['6 tone maj min', [6, 70, 3, NOTE_C, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
-    ['5 tone maj min', [5, 51, 0, NOTE_C, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
-    ['5 tone min maj', [5, 32, 4, NOTE_C, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR]]],
+    ['6 tone (maj)', [6, 70, 3, NOTE_C, [HARMONY_PREFER_MAJOR]]],
+    ['6 tone (maj min)', [6, 70, 3, NOTE_C, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
+    ['5 tone (maj min)', [5, 51, 0, NOTE_C, [HARMONY_PREFER_MAJOR, HARMONY_PREFER_MINOR]]],
+    ['5 tone (min maj)', [5, 32, 4, NOTE_C, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR]]],
     [],  # separator line
     ['Chromatic', [12, 0, 0, NOTE_A, [HARMONY_PREFER_MINOR, HARMONY_PREFER_MAJOR]]],
 ]
+""" a scale is defined by:
+
+- title,
+- number of tones,
+- index of basic_scale as defined in basic_scales
+  (example: the same basic_scale (7, 65) is used for c major, c minor, d major, ...)
+- index of first tone (0 - 11) within basic_scale, this defines the start position within the scale
+  (example: if this is set to 0 for scale (7, 65) a major scale is fixed, so c major and d major are still possible,
+  but not c minor)
+- interpretation ( = absolute height) of first tone, i.e. c, cis, d, dis, ...
+  (if set to c in the example above the scale is now fixed as c major)
+- 1, 2, or 3 harmony IDs as defined in harmonies,
+  first ID defines main harmony, 2nd and 3rd (if defined) are used less often
+- the first harmony must be buildable with the first tone as starting point
+  for example, if c-major is defined as described above, the first harmony can not
+  be minor (which is not buildable over c)
+
+"""
+
 
 PERCUSSION_LIST = [
     # add or don't add percussion to melody instruments
@@ -183,36 +229,33 @@ RHYTHM_LIST = [
     ['Jazz Ride', 17, 80, 180],
     ['Merengue', 18, 100, 140],
     ['Soca', 35, 102, 138],
-    ['Reggae', 19, 60, 160],#bpm from here
-    ['Viennese Waltz', 20, 60, 160],
-    ['Tango', 21, 60, 160],
-    ['Cha cha', 22, 60, 160],
-    ['Calypso', 23, 60, 160],
-    ['Hip Hop', 24, 60, 160],
-    ['Fast Hip Hop', 25, 60, 160],
-    ['Techno', 26, 60, 160],
-    ['House', 27, 60, 160],
-    ['Syrto', 28, 60, 160],
-    ['Guaguanco', 29, 60, 160],
-    ['Polka', 30, 60, 160],
-    ['Blues Shuffle', 31, 60, 160],
-    ['Mambo', 32, 60, 160],
-    ['Waltz', 33, 60, 160],
-    ['Train Beat', 34, 60, 160],
+    ['Reggae', 19, 100, 150],
+    ['Viennese Waltz', 20, 140, 200],
+    ['Tango', 21, 110, 136],
+    ['Cha cha', 22, 95, 125],
+    ['Calypso', 23, 80, 125],
+    ['Hip Hop', 24, 60, 110],
+    ['Fast Hip Hop', 25, 70, 86],
+    ['Techno', 26, 100, 190],
+    ['House', 27, 100, 190],
+    ['Syrto', 28, 100, 160],
+    ['Guaguanco', 29, 90, 110],
+    ['Polka', 30, 90, 140],
+    ['Blues Shuffle', 31, 80, 160],
+    ['Mambo', 32, 85, 115],
+    ['Waltz', 33, 75, 120],
+    ['Train Beat', 34, 80, 160],
 
 ]
 
 SPEED_LIST = [
-    # speed restricts possible bpm (beats per minute)
-    # value (lower and upper limit)
+    # speed restricts possible bpm (beats per minute) depending on selected rhythm
     # and restricts also possible subdivisions
-    # example: TICKRES (a quarter note) // 2 defines the smallest possible distance of to notes to be an eighth
-    # example: TICKRES (a quarter note) // 8 defines the smallest possible distance of to notes to be an 32th
-    #['very low speed', [45, 60], TICKSRES // 1],
+    # example: TICKRES (a quarter note) // 2 defines the smallest possible distance of two notes to be an eighth
+    # example: TICKRES (a quarter note) // 8 defines the smallest possible distance of two notes to be an 32th
     ['lower speed', 0, TICKSRES // 2],
     ['normal speed', 1, TICKSRES // 3],
     ['higher speed', 2, TICKSRES // 6],
-    #['very high speed', [150, 165], TICKSRES // 8],
 ]
 
 SMALLEST_PART_LENGTH_OPTIONS = [1, 2, 3, 4, 5]

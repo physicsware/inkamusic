@@ -18,7 +18,7 @@ import inkamusic.const as const
 import inkamusic.utilities as utilities
 import inkamusic.create_composition as create_composition
 import inkamusic.settings as settings
-import inkamusic.general_midi_instruments
+import inkamusic.general_midi_instruments as general_midi_instruments
 import inkamusic.menu_entries as me
 import inkamusic.music_parameter as mp
 
@@ -396,8 +396,7 @@ class InkaAlgorithmicMusicWebInterface():
         if const.DEBUG_OUTPUT:
             print(' ')
             print(' ')
-            print(' ')
-            print(' ***   NEW   ***')
+            print(' ***   START   ***')
             print(' ')
             print(' ')
             print('seed is', seed_val, 'and instru_id is', instru_id_val)
@@ -423,8 +422,7 @@ class InkaAlgorithmicMusicWebInterface():
             cherrypy.session['mystring'] = random_file_name
 
         except AttributeError:
-            pass 
-
+            pass
 
         # create InkaAlgorithmicMusic object
         current_composition = create_composition.InkaAlgorithmicMusic(menu_options=self.menu_options,

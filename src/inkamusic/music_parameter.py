@@ -14,7 +14,7 @@ from inkamusic.const import CR, CR2, CR_INTRO, CR_ENDING, CRB
 # initial menu settings in web interface
 # index starts with 0 for first menu item, separator lines are counted
 # instrumentation, percussion, scales, rhythms, minutes, seconds, speed
-MENU_INIT = [7, 0, 9, 22, 2, 2, 1]
+MENU_INIT = [0, 0, 20, 22, 2, 2, 1]
 
 # activate special settings in order to use Logic Pro with the MIDI files created by this app
 LOGIC_PRO_MIDI_SETTINGS = True
@@ -29,7 +29,7 @@ STACC_LEN_IN_S = 0.15  # default 0.15
 # which are connected by type STANDARD, not LEGATO or STACCATO
 TONE_SEPARATION_IN_S = 0.1
 
-# volume reduce in % for chord tones played simultaneously by on instrument
+# volume reduce in % for chord tones played simultaneously by one instrument
 VOLUME_REDUCE_CHORD_TONES = 4  # default 4
 
 # the tones of a chord start at slightly different times. This constant gives the maximum amount in ticks of
@@ -102,7 +102,7 @@ AUTO_DAMP_TIME = 1.5  # default 1.5
 # this tone length is used when the tone length can not be
 # inferred from the position of the next tone when the next tone is too far away (> TONE_LENGTH_PARAM[3])
 # or from the dissonance limit
-TONE_LENGTH_PARAM = [1.5, 0.75, 1.0, 4.1] # default [1.5, 0.75, 1.0, 4.1]
+TONE_LENGTH_PARAM = [1.5, 0.75, 1.0, 4.1]  # default [1.5, 0.75, 1.0, 4.1]
 
 # probabilities in % for specific instrument types to play only tones
 # of current harmony instead of using all possible tones
@@ -308,9 +308,8 @@ INSTRU_DISTRIBUTION = [
 
 # range reduction of instruments, max %
 # to avoid using the full range every time
-RANGE_REDUCTION = 0.05 # default 0.05
+RANGE_REDUCTION = 0.05  # default 0.05
 
 # used to calculate the random envelope length in bars (one full turn)
 # these are gauss parameters (mean, delta, min, max)
-ENVELOPE_LENGTH = [40, 10, 30, 50] # default [40, 10, 30, 50]
-
+ENVELOPE_LENGTH = [40, 10, 30, 50]  # default [40, 10, 30, 50]

@@ -1,13 +1,4 @@
 
-inkamusic
-=========
-
-Note
-----
-
-inkamusic is currently being converted to a github open-source project. 
-
-A first usable version will be available soon.
 
 
 .. image:: https://img.shields.io/pypi/v/inkamusic.svg

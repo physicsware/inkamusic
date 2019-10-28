@@ -1,0 +1,460 @@
+[28/Oct/2019:06:45:12] ENGINE Listening for SIGTERM.
+[28/Oct/2019:06:45:12] ENGINE Listening for SIGHUP.
+[28/Oct/2019:06:45:12] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:06:45:12] ENGINE Bus STARTING
+[28/Oct/2019:06:45:12] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:06:45:12] ENGINE Serving on http://:::8080
+[28/Oct/2019:06:45:12] ENGINE Bus STARTED
+[28/Oct/2019:06:48:04] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:06:48:04] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:06:48:04] ENGINE Bus STOPPING
+[28/Oct/2019:06:48:04] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:06:48:04] ENGINE Bus STOPPED
+[28/Oct/2019:06:48:04] ENGINE Bus EXITING
+[28/Oct/2019:06:48:04] ENGINE Bus EXITED
+[28/Oct/2019:06:48:04] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:06:48:04] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:06:48:04] ENGINE Listening for SIGTERM.
+[28/Oct/2019:06:48:04] ENGINE Listening for SIGHUP.
+[28/Oct/2019:06:48:04] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:06:48:04] ENGINE Bus STARTING
+[28/Oct/2019:06:48:04] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:06:48:06] ENGINE Bus STOPPING
+[28/Oct/2019:06:48:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) already shut down
+[28/Oct/2019:06:48:06] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:06:48:06] ENGINE Bus STOPPED
+[28/Oct/2019:06:48:06] ENGINE Bus EXITING
+[28/Oct/2019:06:48:06] ENGINE Bus EXITED
+[28/Oct/2019:06:48:08] ENGINE Listening for SIGTERM.
+[28/Oct/2019:06:48:08] ENGINE Listening for SIGHUP.
+[28/Oct/2019:06:48:08] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:06:48:08] ENGINE Bus STARTING
+[28/Oct/2019:06:48:08] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:06:48:08] ENGINE Serving on http://:::8080
+[28/Oct/2019:06:48:08] ENGINE Bus STARTED
+[28/Oct/2019:06:48:19] ENGINE Started monitor thread 'Session cleanup'.
+[28/Oct/2019:06:51:45] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:06:51:45] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:06:51:45] ENGINE Bus STOPPING
+[28/Oct/2019:06:51:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:06:51:45] ENGINE Stopped thread 'Session cleanup'.
+[28/Oct/2019:06:51:45] ENGINE Bus STOPPED
+[28/Oct/2019:06:51:45] ENGINE Bus EXITING
+[28/Oct/2019:06:51:45] ENGINE Bus EXITED
+[28/Oct/2019:06:51:45] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:06:51:45] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:06:51:45] ENGINE Listening for SIGTERM.
+[28/Oct/2019:06:51:45] ENGINE Listening for SIGHUP.
+[28/Oct/2019:06:51:45] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:06:51:45] ENGINE Bus STARTING
+[28/Oct/2019:06:51:45] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:06:51:45] ENGINE Serving on http://:::8080
+[28/Oct/2019:06:51:45] ENGINE Bus STARTED
+[28/Oct/2019:06:51:49] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:06:51:49] ENGINE Bus STOPPING
+[28/Oct/2019:06:51:49] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:06:51:49] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:06:51:49] ENGINE Bus STOPPED
+[28/Oct/2019:06:51:49] ENGINE Bus EXITING
+[28/Oct/2019:06:51:49] ENGINE Bus EXITED
+[28/Oct/2019:06:51:49] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:06:51:52] ENGINE Listening for SIGTERM.
+[28/Oct/2019:06:51:52] ENGINE Listening for SIGHUP.
+[28/Oct/2019:06:51:52] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:06:51:52] ENGINE Bus STARTING
+[28/Oct/2019:06:51:52] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:06:51:52] ENGINE Serving on http://:::8080
+[28/Oct/2019:06:51:52] ENGINE Bus STARTED
+[28/Oct/2019:06:54:24] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:06:54:24] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:06:54:24] ENGINE Bus STOPPING
+[28/Oct/2019:06:54:24] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:06:54:24] ENGINE Bus STOPPED
+[28/Oct/2019:06:54:24] ENGINE Bus EXITING
+[28/Oct/2019:06:54:24] ENGINE Bus EXITED
+[28/Oct/2019:06:54:24] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:06:54:24] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:06:54:25] ENGINE Listening for SIGTERM.
+[28/Oct/2019:06:54:25] ENGINE Listening for SIGHUP.
+[28/Oct/2019:06:54:25] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:06:54:25] ENGINE Bus STARTING
+[28/Oct/2019:06:54:25] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:06:54:25] ENGINE Serving on http://:::8080
+[28/Oct/2019:06:54:25] ENGINE Bus STARTED
+[28/Oct/2019:06:54:33] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:06:54:33] ENGINE Bus STOPPING
+[28/Oct/2019:06:54:33] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:06:54:33] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:06:54:33] ENGINE Bus STOPPED
+[28/Oct/2019:06:54:33] ENGINE Bus EXITING
+[28/Oct/2019:06:54:33] ENGINE Bus EXITED
+[28/Oct/2019:06:54:33] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:06:54:34] ENGINE Listening for SIGTERM.
+[28/Oct/2019:06:54:34] ENGINE Listening for SIGHUP.
+[28/Oct/2019:06:54:34] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:06:54:34] ENGINE Bus STARTING
+[28/Oct/2019:06:54:34] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:06:54:35] ENGINE Serving on http://:::8080
+[28/Oct/2019:06:54:35] ENGINE Bus STARTED
+[28/Oct/2019:06:55:02] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:06:55:02] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:06:55:02] ENGINE Bus STOPPING
+[28/Oct/2019:06:55:02] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:06:55:02] ENGINE Bus STOPPED
+[28/Oct/2019:06:55:02] ENGINE Bus EXITING
+[28/Oct/2019:06:55:02] ENGINE Bus EXITED
+[28/Oct/2019:06:55:02] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:06:55:02] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:06:55:02] ENGINE Listening for SIGTERM.
+[28/Oct/2019:06:55:02] ENGINE Listening for SIGHUP.
+[28/Oct/2019:06:55:02] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:06:55:02] ENGINE Bus STARTING
+[28/Oct/2019:06:55:02] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:06:55:02] ENGINE Serving on http://:::8080
+[28/Oct/2019:06:55:02] ENGINE Bus STARTED
+[28/Oct/2019:06:55:16] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:06:55:16] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:06:55:16] ENGINE Bus STOPPING
+[28/Oct/2019:06:55:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:06:55:16] ENGINE Bus STOPPED
+[28/Oct/2019:06:55:16] ENGINE Bus EXITING
+[28/Oct/2019:06:55:16] ENGINE Bus EXITED
+[28/Oct/2019:06:55:16] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:06:55:16] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:06:55:16] ENGINE Listening for SIGTERM.
+[28/Oct/2019:06:55:16] ENGINE Listening for SIGHUP.
+[28/Oct/2019:06:55:16] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:06:55:16] ENGINE Bus STARTING
+[28/Oct/2019:06:55:16] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:06:55:16] ENGINE Serving on http://:::8080
+[28/Oct/2019:06:55:16] ENGINE Bus STARTED
+[28/Oct/2019:07:15:29] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:07:15:29] ENGINE Bus STOPPING
+[28/Oct/2019:07:15:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:15:29] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:15:29] ENGINE Bus STOPPED
+[28/Oct/2019:07:15:29] ENGINE Bus EXITING
+[28/Oct/2019:07:15:29] ENGINE Bus EXITED
+[28/Oct/2019:07:15:29] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:15:31] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:15:31] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:15:31] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:15:31] ENGINE Bus STARTING
+[28/Oct/2019:07:15:31] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:15:31] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:15:31] ENGINE Bus STARTED
+[28/Oct/2019:07:17:07] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:07:17:07] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:17:07] ENGINE Bus STOPPING
+[28/Oct/2019:07:17:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:17:07] ENGINE Bus STOPPED
+[28/Oct/2019:07:17:07] ENGINE Bus EXITING
+[28/Oct/2019:07:17:07] ENGINE Bus EXITED
+[28/Oct/2019:07:17:07] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:17:07] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:17:15] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:17:15] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:17:15] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:17:15] ENGINE Bus STARTING
+[28/Oct/2019:07:17:15] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:17:16] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:17:16] ENGINE Bus STARTED
+[28/Oct/2019:07:17:19] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:07:17:19] ENGINE Bus STOPPING
+[28/Oct/2019:07:17:19] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:17:19] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:17:19] ENGINE Bus STOPPED
+[28/Oct/2019:07:17:19] ENGINE Bus EXITING
+[28/Oct/2019:07:17:19] ENGINE Bus EXITED
+[28/Oct/2019:07:17:19] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:17:20] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:17:20] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:17:20] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:17:20] ENGINE Bus STARTING
+[28/Oct/2019:07:17:20] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:17:21] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:17:21] ENGINE Bus STARTED
+[28/Oct/2019:07:18:10] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:07:18:10] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:18:10] ENGINE Bus STOPPING
+[28/Oct/2019:07:18:10] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:18:10] ENGINE Bus STOPPED
+[28/Oct/2019:07:18:10] ENGINE Bus EXITING
+[28/Oct/2019:07:18:10] ENGINE Bus EXITED
+[28/Oct/2019:07:18:10] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:18:10] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:18:10] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:18:10] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:18:10] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:18:10] ENGINE Bus STARTING
+[28/Oct/2019:07:18:10] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:18:10] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:18:10] ENGINE Bus STARTED
+[28/Oct/2019:07:18:36] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:07:18:36] ENGINE Bus STOPPING
+[28/Oct/2019:07:18:36] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:18:36] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:18:36] ENGINE Bus STOPPED
+[28/Oct/2019:07:18:36] ENGINE Bus EXITING
+[28/Oct/2019:07:18:36] ENGINE Bus EXITED
+[28/Oct/2019:07:18:36] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:18:39] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:18:39] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:18:39] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:18:39] ENGINE Bus STARTING
+[28/Oct/2019:07:18:39] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:18:39] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:18:39] ENGINE Bus STARTED
+[28/Oct/2019:07:18:48] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:07:18:48] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:18:48] ENGINE Bus STOPPING
+[28/Oct/2019:07:18:48] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:18:48] ENGINE Bus STOPPED
+[28/Oct/2019:07:18:48] ENGINE Bus EXITING
+[28/Oct/2019:07:18:48] ENGINE Bus EXITED
+[28/Oct/2019:07:18:48] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:18:48] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:18:48] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:18:48] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:18:48] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:18:48] ENGINE Bus STARTING
+[28/Oct/2019:07:18:48] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:18:48] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:18:48] ENGINE Bus STARTED
+[28/Oct/2019:07:18:49] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:07:18:49] ENGINE Bus STOPPING
+[28/Oct/2019:07:18:49] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:18:49] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:18:49] ENGINE Bus STOPPED
+[28/Oct/2019:07:18:49] ENGINE Bus EXITING
+[28/Oct/2019:07:18:49] ENGINE Bus EXITED
+[28/Oct/2019:07:18:49] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:18:52] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:18:52] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:18:52] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:18:52] ENGINE Bus STARTING
+[28/Oct/2019:07:18:52] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:18:52] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:18:52] ENGINE Bus STARTED
+[28/Oct/2019:07:31:05] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:07:31:05] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:31:05] ENGINE Bus STOPPING
+[28/Oct/2019:07:31:05] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:31:05] ENGINE Bus STOPPED
+[28/Oct/2019:07:31:05] ENGINE Bus EXITING
+[28/Oct/2019:07:31:05] ENGINE Bus EXITED
+[28/Oct/2019:07:31:05] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:31:05] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:31:05] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:31:05] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:31:05] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:31:05] ENGINE Bus STARTING
+[28/Oct/2019:07:31:05] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:31:05] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:31:05] ENGINE Bus STARTED
+[28/Oct/2019:07:31:07] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:07:31:07] ENGINE Bus STOPPING
+[28/Oct/2019:07:31:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:31:07] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:31:07] ENGINE Bus STOPPED
+[28/Oct/2019:07:31:07] ENGINE Bus EXITING
+[28/Oct/2019:07:31:07] ENGINE Bus EXITED
+[28/Oct/2019:07:31:07] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:31:09] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:31:09] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:31:09] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:31:09] ENGINE Bus STARTING
+[28/Oct/2019:07:31:09] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:31:09] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:31:09] ENGINE Bus STARTED
+[28/Oct/2019:07:31:20] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:07:31:20] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:31:20] ENGINE Bus STOPPING
+[28/Oct/2019:07:31:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:31:20] ENGINE Bus STOPPED
+[28/Oct/2019:07:31:20] ENGINE Bus EXITING
+[28/Oct/2019:07:31:20] ENGINE Bus EXITED
+[28/Oct/2019:07:31:20] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:31:20] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:31:20] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:31:20] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:31:20] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:31:20] ENGINE Bus STARTING
+[28/Oct/2019:07:31:20] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:31:20] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:31:20] ENGINE Bus STARTED
+[28/Oct/2019:07:31:21] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:07:31:21] ENGINE Bus STOPPING
+[28/Oct/2019:07:31:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:31:21] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:31:21] ENGINE Bus STOPPED
+[28/Oct/2019:07:31:21] ENGINE Bus EXITING
+[28/Oct/2019:07:31:21] ENGINE Bus EXITED
+[28/Oct/2019:07:31:21] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:31:23] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:31:23] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:31:23] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:31:23] ENGINE Bus STARTING
+[28/Oct/2019:07:31:23] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:31:23] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:31:23] ENGINE Bus STARTED
+[28/Oct/2019:07:31:41] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/startup.py changed.
+[28/Oct/2019:07:31:41] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:31:41] ENGINE Bus STOPPING
+[28/Oct/2019:07:31:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:31:41] ENGINE Bus STOPPED
+[28/Oct/2019:07:31:41] ENGINE Bus EXITING
+[28/Oct/2019:07:31:41] ENGINE Bus EXITED
+[28/Oct/2019:07:31:41] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:31:41] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:31:41] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:31:41] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:31:41] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:31:41] ENGINE Bus STARTING
+[28/Oct/2019:07:31:41] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:31:42] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:31:42] ENGINE Bus STARTED
+[28/Oct/2019:07:34:50] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/menu_entries.py changed.
+[28/Oct/2019:07:34:50] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:34:50] ENGINE Bus STOPPING
+[28/Oct/2019:07:34:50] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:34:50] ENGINE Bus STOPPED
+[28/Oct/2019:07:34:50] ENGINE Bus EXITING
+[28/Oct/2019:07:34:50] ENGINE Bus EXITED
+[28/Oct/2019:07:34:51] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:34:51] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:35:39] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:35:39] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:35:39] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:35:39] ENGINE Bus STARTING
+[28/Oct/2019:07:35:39] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:35:39] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:35:39] ENGINE Bus STARTED
+[28/Oct/2019:07:35:49] ENGINE Started monitor thread 'Session cleanup'.
+[28/Oct/2019:07:51:41] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/structures.py changed.
+[28/Oct/2019:07:51:41] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:51:41] ENGINE Bus STOPPING
+[28/Oct/2019:07:51:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:51:41] ENGINE Stopped thread 'Session cleanup'.
+[28/Oct/2019:07:51:41] ENGINE Bus STOPPED
+[28/Oct/2019:07:51:41] ENGINE Bus EXITING
+[28/Oct/2019:07:51:41] ENGINE Bus EXITED
+[28/Oct/2019:07:51:41] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:51:41] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:51:41] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:51:41] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:51:41] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:51:41] ENGINE Bus STARTING
+[28/Oct/2019:07:51:41] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:51:41] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:51:41] ENGINE Bus STARTED
+[28/Oct/2019:07:51:55] ENGINE Started monitor thread 'Session cleanup'.
+[28/Oct/2019:07:53:55] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/webutilities.py changed.
+[28/Oct/2019:07:53:55] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:53:55] ENGINE Bus STOPPING
+[28/Oct/2019:07:53:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:53:55] ENGINE Stopped thread 'Session cleanup'.
+[28/Oct/2019:07:53:55] ENGINE Bus STOPPED
+[28/Oct/2019:07:53:55] ENGINE Bus EXITING
+[28/Oct/2019:07:53:55] ENGINE Bus EXITED
+[28/Oct/2019:07:53:55] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:53:55] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:53:56] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:53:56] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:53:56] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:53:56] ENGINE Bus STARTING
+[28/Oct/2019:07:53:56] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:53:56] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:53:56] ENGINE Bus STARTED
+[28/Oct/2019:07:54:01] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/create_composition.py changed.
+[28/Oct/2019:07:54:01] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:54:01] ENGINE Bus STOPPING
+[28/Oct/2019:07:54:01] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:54:01] ENGINE Bus STOPPED
+[28/Oct/2019:07:54:01] ENGINE Bus EXITING
+[28/Oct/2019:07:54:01] ENGINE Bus EXITED
+[28/Oct/2019:07:54:01] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:54:01] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:54:01] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:54:01] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:54:01] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:54:01] ENGINE Bus STARTING
+[28/Oct/2019:07:54:01] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:54:01] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:54:01] ENGINE Bus STARTED
+[28/Oct/2019:07:54:22] ENGINE Started monitor thread 'Session cleanup'.
+[28/Oct/2019:07:58:47] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/const.py changed.
+[28/Oct/2019:07:58:47] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:58:47] ENGINE Bus STOPPING
+[28/Oct/2019:07:58:47] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:58:47] ENGINE Stopped thread 'Session cleanup'.
+[28/Oct/2019:07:58:47] ENGINE Bus STOPPED
+[28/Oct/2019:07:58:47] ENGINE Bus EXITING
+[28/Oct/2019:07:58:47] ENGINE Bus EXITED
+[28/Oct/2019:07:58:47] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:58:47] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:07:58:47] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:58:47] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:58:47] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:58:47] ENGINE Bus STARTING
+[28/Oct/2019:07:58:47] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:58:47] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:58:47] ENGINE Bus STARTED
+[28/Oct/2019:07:58:50] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:07:58:50] ENGINE Bus STOPPING
+[28/Oct/2019:07:58:50] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:07:58:50] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:07:58:50] ENGINE Bus STOPPED
+[28/Oct/2019:07:58:50] ENGINE Bus EXITING
+[28/Oct/2019:07:58:50] ENGINE Bus EXITED
+[28/Oct/2019:07:58:50] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:07:58:52] ENGINE Listening for SIGTERM.
+[28/Oct/2019:07:58:52] ENGINE Listening for SIGHUP.
+[28/Oct/2019:07:58:52] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:07:58:52] ENGINE Bus STARTING
+[28/Oct/2019:07:58:52] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:07:58:52] ENGINE Serving on http://:::8080
+[28/Oct/2019:07:58:52] ENGINE Bus STARTED
+[28/Oct/2019:07:59:03] ENGINE Started monitor thread 'Session cleanup'.
+[28/Oct/2019:08:00:38] ENGINE Restarting because /Users/udowollschlager/Google Drive/virtenvs/inka_python/inkamusic-git/src/inkamusic/settings.py changed.
+[28/Oct/2019:08:00:38] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:08:00:38] ENGINE Bus STOPPING
+[28/Oct/2019:08:00:38] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:08:00:38] ENGINE Stopped thread 'Session cleanup'.
+[28/Oct/2019:08:00:38] ENGINE Bus STOPPED
+[28/Oct/2019:08:00:38] ENGINE Bus EXITING
+[28/Oct/2019:08:00:38] ENGINE Bus EXITED
+[28/Oct/2019:08:00:38] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:08:00:38] ENGINE Re-spawning /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m inkamusic
+[28/Oct/2019:08:00:38] ENGINE Listening for SIGTERM.
+[28/Oct/2019:08:00:38] ENGINE Listening for SIGHUP.
+[28/Oct/2019:08:00:38] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:08:00:38] ENGINE Bus STARTING
+[28/Oct/2019:08:00:38] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:08:00:38] ENGINE Serving on http://:::8080
+[28/Oct/2019:08:00:38] ENGINE Bus STARTED
+[28/Oct/2019:08:00:41] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:08:00:41] ENGINE Bus STOPPING
+[28/Oct/2019:08:00:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:08:00:41] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:08:00:41] ENGINE Bus STOPPED
+[28/Oct/2019:08:00:41] ENGINE Bus EXITING
+[28/Oct/2019:08:00:41] ENGINE Bus EXITED
+[28/Oct/2019:08:00:41] ENGINE Waiting for child threads to terminate...
+[28/Oct/2019:08:00:44] ENGINE Listening for SIGTERM.
+[28/Oct/2019:08:00:44] ENGINE Listening for SIGHUP.
+[28/Oct/2019:08:00:44] ENGINE Listening for SIGUSR1.
+[28/Oct/2019:08:00:44] ENGINE Bus STARTING
+[28/Oct/2019:08:00:44] ENGINE Started monitor thread 'Autoreloader'.
+[28/Oct/2019:08:00:44] ENGINE Serving on http://:::8080
+[28/Oct/2019:08:00:44] ENGINE Bus STARTED
+[28/Oct/2019:08:00:50] ENGINE Started monitor thread 'Session cleanup'.
+[28/Oct/2019:08:02:22] ENGINE Keyboard Interrupt: shutting down bus
+[28/Oct/2019:08:02:22] ENGINE Bus STOPPING
+[28/Oct/2019:08:02:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('::', 8080)) shut down
+[28/Oct/2019:08:02:22] ENGINE Stopped thread 'Session cleanup'.
+[28/Oct/2019:08:02:22] ENGINE Stopped thread 'Autoreloader'.
+[28/Oct/2019:08:02:22] ENGINE Bus STOPPED
+[28/Oct/2019:08:02:22] ENGINE Bus EXITING
+[28/Oct/2019:08:02:22] ENGINE Bus EXITED
+[28/Oct/2019:08:02:22] ENGINE Waiting for child threads to terminate...

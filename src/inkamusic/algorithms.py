@@ -15,7 +15,7 @@ import inkamusic.const as const
 from inkamusic.const import SUB_INDX, PROP_INDX, LEN_INDX, PROP_USEPART, NO_REPEAT
 from inkamusic.const import PROP_FROM_BAR, PROP_ACTUAL_BAR, PROP_START, PROP_END
 from inkamusic.const import RM_REPEAT
-from inkamusic.const import FIRST_BAR_OF_PART, BEAT_RHYTHM, BEAT_MELODY, FIRST_PREVIOUS_TONE
+from inkamusic.const import FIRST_BAR_OF_PART, BEAT_RHYTHM, BEAT_MELODY
 
 import inkamusic.music_parameter as mp
 import inkamusic.rhythm_algorithms as rhythm_algorithms
@@ -252,9 +252,9 @@ class InkaAlgorithms():
         # example of scale [7, 65, 0, 2, [1, 0, 2]] (SCALE_LEN, SCALE_COUNT, SCALE_START, SCALE_NOTE, harmonies)
 
         basic_scale = c_3['basicscale_class'].get_scale_by_index(c_3['scale'][const.SCALE_LEN_INDX],
-                                                                c_3['scale'][const.SCALE_COUNT_INDX],
-                                                                c_3['scale'][const.SCALE_START_INDX],
-                                                                c_3['scale'][const.SCALE_NOTE_INDX])
+                                                                 c_3['scale'][const.SCALE_COUNT_INDX],
+                                                                 c_3['scale'][const.SCALE_START_INDX],
+                                                                 c_3['scale'][const.SCALE_NOTE_INDX])
 
         c_3['basic_scale'] = basic_scale
         # example for basic_scale 7 65 with SCALE_START 0 (major pattern) and
@@ -367,36 +367,6 @@ class InkaAlgorithms():
                     del possible_tones[i]
 
         return selected_tone
-
-#     def _find_up_down_equal_tone(self, beat_indx, possible_tones, previous_tones):
-#         """chooses tone from possible tones using up_down_equal setting"""
-#
-#         c_3 = self.comp_data_3
-#         found_tone = False
-#         try_counter = 0
-#         while not found_tone:
-#
-#             _change_up_down_equal(c_3, try_counter)
-#
-#             up_down_equal = c_3['up_down_equal_probs']
-#
-#             up_down_equal_tones = copy.deepcopy(possible_tones)
-#
-#             if beat_indx != 0:  # allow all tones at start of part
-#
-#                 for i in range(len(up_down_equal_tones) - 1, -1, -1):
-#                     if up_down_equal > 0 and up_down_equal_tones[i][0] <= previous_tones[FIRST_PREVIOUS_TONE][0]:
-#                         del up_down_equal_tones[i]
-#                     elif up_down_equal < 0 and up_down_equal_tones[i][0] >= previous_tones[FIRST_PREVIOUS_TONE][0]:
-#                         del up_down_equal_tones[i]
-#                     elif up_down_equal == 0 and up_down_equal_tones[i][0] != previous_tones[FIRST_PREVIOUS_TONE][0]:
-#                         del up_down_equal_tones[i]
-#             if up_down_equal_tones:
-#                 selected_tone = self._choose_tone(up_down_equal_tones)
-#                 found_tone = True
-#
-#             try_counter += 1
-#         return selected_tone
 
     def _do_tone(self, possible_tones, ending_flags):
         """selects a tone for non-special cases"""
@@ -796,12 +766,11 @@ class InkaAlgorithms():
             beat_indx += 1
 
     def create_part(self, c_strct):
-        """
-        Creates positions (rhythm), tone heights (melody) intensities and connection_types for one part.
-        Loops through all beats of the part.
-        In one loop the following functions are called:
-         self.rhythm_generator
-         self.melody_generator """
+        """ Creates positions (rhythm), tone heights (melody) intensities and connection_types for one part.
+            Loops through all beats of the part.
+            In one loop the following functions are called:
+            self.rhythm_generator
+            self.melody_generator """
 
         c_3 = self.comp_data_3
 
