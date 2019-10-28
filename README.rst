@@ -21,9 +21,9 @@
    :alt: Travis
 
 
-.. image:: https://img.shields.io/readthedocs/inkamusic
-   :target: https://img.shields.io/readthedocs/inkamusic
-   :alt: Read the Docs
+.. image:: https://readthedocs.org/projects/inkamusic/badge/?version=latest
+   :target: https://inkamusic.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
 
 
 Overview
