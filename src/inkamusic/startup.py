@@ -29,8 +29,8 @@ def start():
             '/static': {'tools.staticdir.on': True, 'tools.staticdir.dir': const.STAT_DIR}
             }
     cherrypy.log.screen = False
-    cherrypy.log.error_file = package_dir + "/" + const.LOG_DIR + 'cherrypy_errlog.txt'
-    cherrypy.log.access_file = package_dir + "/" + const.LOG_DIR + 'cherrypy_access.txt'
+    # cherrypy.log.error_file = package_dir + "/" + const.LOG_DIR + 'cherrypy_errlog.txt'
+    # cherrypy.log.access_file = package_dir + "/" + const.LOG_DIR + 'cherrypy_access.txt'
 
     if const.HTTPS_PORT == 0:  # no https support
 
