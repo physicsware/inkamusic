@@ -36,7 +36,7 @@ Installation
 
 You can download and install the latest version of this software from the Python package index (PyPI) as follows:
 
-.. code-block::
+.. code-block:: shell
 
    pip install --upgrade inkamusic
 
@@ -46,7 +46,7 @@ Usage
 
 To use the stand alone version run
 
-.. code-block::
+.. code-block:: shell
 
    inkamusic
 
