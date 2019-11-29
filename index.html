@@ -1,1 +1,18 @@
-test
+<p><a href="https://pypi.org/project/inkamusic/"><img src="https://img.shields.io/pypi/v/inkamusic.svg" alt="image" /></a></p>
+<p><a href="https://pypi.org/project/inkamusic/"><img src="https://img.shields.io/pypi/l/inkamusic.svg" alt="image" /></a></p>
+<p><a href="https://pypi.org/project/inkamusic/"><img src="https://img.shields.io/pypi/pyversions/inkamusic.svg" alt="image" /></a></p>
+<p><a href="https://inkamusic.readthedocs.io/en/latest/?badge=latest"><img src="https://readthedocs.org/projects/inkamusic/badge/?version=latest" alt="Documentation Status" /></a></p>
+<h1 id="overview">Overview</h1>
+<p>inkamusic creates instrumental music, based on rules. This includes structure, rhythm, melody, harmonization and instrumentation. A simple web interface (with CherryPy) offers the possibility to choose from several options. The output format is a MIDI file that can be played with many applications, e.g. Garageband or VLC on MacOS or Windows Media Player on Windows. Or try <a href="https://musescore.org/en">https://musescore.org/en</a>, which not only plays the midi files, but also displays the score.</p>
+<h1 id="installation">Installation</h1>
+<p>You can download and install the latest version of this software from the Python package index (PyPI) as follows:</p>
+<pre class="shell"><code>pip install --upgrade inkamusic</code></pre>
+<h1 id="usage">Usage</h1>
+<p>To use the stand alone version run</p>
+<pre class="shell"><code>inkamusic</code></pre>
+<p>This will start a local CherryPy web server. Now open a browser window and enter</p>
+<p><a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></p>
+<p>Select options and use the Create button to create a MIDI file. Depending on your browser settings this file will be downloaded or opened. See Overview for additional hints.</p>
+<p>inkamusic can also be used as an imported module, but this feature is in a preliminary state. More information will be added later.</p>
+<h1 id="credits">Credits</h1>
+<p>uses the CherryPy Web Framework <a href="https://cherrypy.org/">https://cherrypy.org/</a></p>
